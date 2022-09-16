@@ -11,7 +11,6 @@ Main features:
 
 *The search function and index selection are under-development
 
-DEVELOP ENVIRONMENT:
-DEPEDENCES:
+
 DEVELOPER: Yizhao Chen
 INITIAL UPLOAD: 2022/7/19
