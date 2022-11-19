@@ -11,6 +11,10 @@ Main features:
 
 *The search function and index selection are under-development
 
+Dev. Environment:
+Python: 3.7
+R:3.6.3
+OS: WIN 10
 
 DEVELOPER: Yizhao Chen
 INITIAL UPLOAD: 2022/7/19
