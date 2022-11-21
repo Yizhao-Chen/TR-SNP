@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: computeCriticalDates</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for computeCriticalDates {CAVIAR}"><tr><td>computeCriticalDates {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>computeCriticalDates</h2>
+
+<h3>Description</h3>
+
+<p>Computes wood formation critical dates and durations along with associated confidence intervals
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ computeCriticalDates(data, plot=TRUE)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data frame containing cell count data.
+This data frame must contain at least 7 imposed columns with compulsory names:
+Tree, DY, RF, CZ, EZ, WZ, MZ (see <code><a href="GRA_2017-01-10.html">GRA</a></code>)</p>
+</td></tr>
+<tr valign="top"><td><code>plot</code></td>
+<td>
+<p>an optional logical indicating if a PDF of the verification plots must be printed (default=TRUE)</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function computes wood formation critical dates and durations from a raw data table containing cell
+counts (for each radial file) for the 4 development phases (cambial, enlargement, wall thickening, and mature) per
+sampling dates (see <code><a href="GRA_2017-01-10.html">GRA</a></code>). <br />
+Five critical dates as well as their associated confidence intervals are computed using logistic regressions
+<code><a href="../../stats/html/glm.html">glm</a></code>, the main date corresponds to the 50% probability of the investigated phase being active while
+the 95% confidence interval limits corresponds to the 2.5 and 97.5% probabilities. <br />
+From the five critical dates, the function computes three critical durations along with their associated
+confidence intervals (assuming independence between dates). <br />
+By default (<span class="option">plot=TRUE</span>), the function outputs a PDF of the verification plots entitled
+&lsquo;<span class="file">Verification plots for computation of critical dates... .pdf</span>&rsquo;,
+illustrating the computation of each critical date for a quick visual checking.
+</p>
+
+
+<h3>Value</h3>
+
+<p>A data frame containing the five dates and the three durations along with their associated confidence intervals. <br />
+Critical dates are: <br />
+</p>
+<table summary="R valueblock">
+<tr valign="top"><td><code>bE</code></td>
+<td>
+<p>begining of Enlargement period;</p>
+</td></tr>
+<tr valign="top"><td><code>bW</code></td>
+<td>
+<p>begining of Wall thickening period;</p>
+</td></tr>
+<tr valign="top"><td><code>bM</code></td>
+<td>
+<p>begining of Mature period;</p>
+</td></tr>
+<tr valign="top"><td><code>cE</code></td>
+<td>
+<p>cessation of Enlargement period;</p>
+</td></tr>
+<tr valign="top"><td><code>cW</code></td>
+<td>
+<p>cessation of Wall thickening period.</p>
+</td></tr> </table>
+<p><br />
+Critical durations are: <br />
+</p>
+<table summary="R valueblock">
+<tr valign="top"><td><code>dE</code></td>
+<td>
+<p>duration of Enlargement period (dE = cE - bE);</p>
+</td></tr>
+<tr valign="top"><td><code>dW</code></td>
+<td>
+<p>duration of Wall thickening period (dW = cW - bW);</p>
+</td></tr>
+<tr valign="top"><td><code>dX</code></td>
+<td>
+<p>total duration of wood formation period (dX = cW - bE).</p>
+</td></tr>
+</table>
+
+
+<h3>Note</h3>
+
+<p>Version: 4.2-1. <br />
+Development started: 21 October 2009. <br />
+Last modifications: 07 Septembre 2016.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, UMR1092 - INRA Nancy (France) <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K., Longuetaud F., Mothe F., Cuny H. &amp; Le Moguedec G. 2011.
+Phenology of wood formation: Data processing, analysis and visualisation using R (Package CAVIAR).
+<em>Dendrochronologia</em> <b>29</b>: 139-149. <br />
+</p>
+<p>Rathgeber C.B.K., Rossi S.&amp; Bontemps J.-D. 2011.
+Cambial activity related to tree size in a mature silver-fir plantation.
+<em>Annals of Botany</em> <b>108</b>: 429-438.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ ## Loading the example dataset:
+ data(GRA)
+ 
+ ## Selecting only one year because the function is not taking factor year automatically into account!
+ GRA2009 &lt;- GRA[GRA$Year==2009, ]
+ 
+ ## Computing critical dates for all the trees of GRA dataset for year 2009
+ GRA2009.CD &lt;- computeCriticalDates(GRA2009, plot = TRUE)
+ 
+ ## Creating a csv file containing computed values
+ write.csv2(GRA2009.CD, file = paste("Critical dates - GRA2009 - ", Sys.Date(), ".csv", sep=""), row.names = FALSE)
+
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

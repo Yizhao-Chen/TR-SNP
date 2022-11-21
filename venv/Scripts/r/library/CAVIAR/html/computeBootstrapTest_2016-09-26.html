@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: computeBootstrapTest</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for computeBootstrapTest {CAVIAR}"><tr><td>computeBootstrapTest {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>computeBootstrapTest</h2>
+
+<h3>Description</h3>
+
+<p>Computes bootstrap tests for comparing two groups of trees.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ computeBootstrapTest(data.group1, data.group2, ci.group1 = NA, ci.group2 = NA,
+                      stat = "median", centring = FALSE, iter = 1000, out = FALSE,
+                      plot = FALSE, main = "NULL", var.name = "?", sub = "NULL")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data.group1</code></td>
+<td>
+<p>a vector containing data for the first group</p>
+</td></tr>
+<tr valign="top"><td><code>data.group2</code></td>
+<td>
+<p>a vector containing data for the second group</p>
+</td></tr>
+<tr valign="top"><td><code>ci.group1</code></td>
+<td>
+<p>an optional vector containing standard deviations for the first group</p>
+</td></tr>
+<tr valign="top"><td><code>ci.group2</code></td>
+<td>
+<p>an optional vector containing standard deviations for the second group</p>
+</td></tr>
+<tr valign="top"><td><code>stat</code></td>
+<td>
+<p>the method to be used: <br />
+&quot;mean&quot; for mean comparison;<br />
+&quot;Student&quot; for mean comparison using Student's t statistic;<br />
+&quot;median&quot; for median comparison (default);<br />
+&quot;var&quot; for variance comparison;<br />
+&quot;disp.mean&quot; for dispersion around the mean comparison;<br />
+&quot;disp.median&quot; for dispersion around the median comparison.
+</p>
+</td></tr>
+<tr valign="top"><td><code>centring</code></td>
+<td>
+<p>an optional logical indicating if data must be centred or not (default=FALSE)</p>
+</td></tr>
+<tr valign="top"><td><code>iter</code></td>
+<td>
+<p>an optional integer indicating the number of iterations for the bootstrap (default=1000)</p>
+</td></tr>
+<tr valign="top"><td><code>out</code></td>
+<td>
+<p>an optional logical indicating if bootstrapped series must be outputted or not (default=FALSE)</p>
+</td></tr>
+<tr valign="top"><td><code>plot</code></td>
+<td>
+<p>an optional logical indicating if a plot must be outputted or not (default=FALSE)</p>
+</td></tr>
+<tr valign="top"><td><code>main</code></td>
+<td>
+<p>an optional character containing the title of the plot</p>
+</td></tr>
+<tr valign="top"><td><code>var.name</code></td>
+<td>
+<p>an optional character labeling the variable to be tested</p>
+</td></tr>
+<tr valign="top"><td><code>sub</code></td>
+<td>
+<p>an optional character containing the plot sub-title</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Computes unilateral bootstrap permutation tests for testing equality of mean, median, or variance between
+two groups of trees. <br />
+Several test statistics can be used: mean difference, Studentized mean difference, median difference,
+logarithm ratio of variance, dispersion around the mean ratio and dispersion around the median ratio. <br />
+For test statistics based on the mean, data can be centred. <br />
+Moreover this function can also be feed with two additional vectors containing standard deviations around
+the critical dates in order to take dispersion into account.
+It can plot (optionplot) an histogram of the bootstrap distribution of the tested statistic along with
+its observed value.
+</p>
+
+
+<h3>Value</h3>
+
+<p>A list containing the results of the test:<br />
+</p>
+<table summary="R valueblock">
+<tr valign="top"><td><code>summary</code></td>
+<td>
+<p>Summary of the test</p>
+</td></tr>
+<tr valign="top"><td><code>ASL</code></td>
+<td>
+<p>Signification level of the test</p>
+</td></tr>
+<tr valign="top"><td><code>ts.obs</code></td>
+<td>
+<p>Observed value of the tested statistic (<span class="option">out=TRUE</span>)</p>
+</td></tr>
+<tr valign="top"><td><code>iterations</code></td>
+<td>
+<p>number of iterations (<span class="option">out=TRUE</span>)</p>
+</td></tr>
+<tr valign="top"><td><code>nb.combinations</code></td>
+<td>
+<p>number of possible combinations (<span class="option">out=TRUE</span>)</p>
+</td></tr>
+<tr valign="top"><td><code>ts</code></td>
+<td>
+<p>bootstrap series (<span class="option">out=TRUE</span>)</p>
+</td></tr>
+</table>
+
+
+<h3>Warning </h3>
+
+<p>Dispersion is not implemented for tests based on centred statistics (<span class="option">centring=TRUE</span>)!
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 5.1-1 <br />
+Development started: 14 July 2009. <br />
+Last modifications: 22 September 2016.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, UMR1092 - INRA Nancy (France) <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K., Longuetaud F., Mothe F., Cuny H. &amp; Le Moguedec G. 2011.
+Phenology of wood formation: Data processing, analysis and visualisation using R (Package CAVIAR).
+<em>Dendrochronologia</em> <b>29</b>: 139-149. <br />
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ ## Loading the example dataset:
+ data(GRA)
+
+ ## Computing wood formation critical dates for firs, spruces, and pines in 2009:
+ GRA2009 &lt;- GRA[GRA$Year==2009, ]
+ 
+ Fir2009 &lt;- GRA2009[GRA2009$Sp=="ABAL", ]
+ Spruce2009 &lt;- GRA2009[GRA2009$Sp=="PCAB", ]
+ Pine2009 &lt;- GRA2009[GRA2009$Sp=="PISY", ]
+ 
+ Fir.cd &lt;- computeCriticalDates(Fir2009, plot = TRUE)
+ Spruce.cd &lt;- computeCriticalDates(Spruce2009, plot = TRUE)
+ Pine.cd &lt;- computeCriticalDates(Pine2009, plot = TRUE)
+ 
+ ## Testing if fir start xylogenesis before spruce
+ computeBootstrapTest(Fir.cd$bE, Spruce.cd$bE)
+ 
+ ## Testing if fir starts xylogenesis before spruce with taking dispersion into account
+ computeBootstrapTest(Fir.cd$bE, Spruce.cd$bE, Fir.cd$bE.ci, Spruce.cd$bE.ci)
+ 
+ ## Plotting the test
+ computeBootstrapTest(Fir.cd$bE, Spruce.cd$bE, Fir.cd$bE.ci, Spruce.cd$bE.ci, plot=TRUE)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: standardiseCellCounts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for standardiseCellCounts {CAVIAR}"><tr><td>standardiseCellCounts {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>standardiseCellCounts</h2>
+
+<h3>Description</h3>
+
+<p>Standardise aggregated cell count values using previous ring cell count or measurements.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ standardiseCellCounts(data, na.rm = "FALSE")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data frame composed of 13 columns containing the group variables (Site, Year, Species,
+Tree, Sample, and DY; as well as the quantitative variables (CZ, EZ, WZ, MZ, PR, WMZ,
+and EWMZ. Typically, this data frame come from <code><a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a></code> function.</p>
+</td></tr>
+<tr valign="top"><td><code>na.rm</code></td>
+<td>
+<p>logical indicating if lines where PR is missing should be left as they are without applying
+any standardisation (option &quot;FALSE&quot; by default), or should be removed from the record (option &quot;TRUE&quot;).</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function standardises aggregated cell counts (CZ, EZ, WZ, MZ, WMZ, EWMZ) using previous ring cell counts or
+measurements (PR). ! Insert formula here ! <br />
+</p>
+
+
+<h3>Value</h3>
+
+<p>A data frame similar to the input data frame but containing standardised values
+for the columns: CZ, EZ, WZ, MZ, WMZ, and EWMZ <br />
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 2.1-1. <br />
+Development started: 25 January 2011. <br />
+Last modifications: 27 Septembre 2016.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, UMR1092 - INRA Nancy (France) <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K., Rossi S.&amp; Bontemps J.-D. 2011.
+Cambial activity related to tree size in a mature silver-fir plantation.
+<em>Annals of Botany</em> <b>108</b>: 429-438.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ ## Loading the training dataset
+ data(GRA)
+ 
+ ## Computing the median for Grandfontaine raw data
+ GRA.med &lt;- aggregateRadialFiles(data=GRA, stat="median")
+
+ ## Standardising aggregated data, with keeping in data that cannot be standardised
+ GRA.med.sdd1 &lt;- standardiseCellCounts(GRA.med)
+
+ ## Standardising aggregated data, and removing data that can not standardised
+ GRA.med.sdd2 &lt;- standardiseCellCounts(GRA.med, na.rm = "TRUE")
+
+ ## Creating a csv file containing critical dates data
+ write.csv2(GRA.med.sdd1, file = paste("GRA median standardised ", Sys.Date(), ".csv", sep=""), row.names = FALSE)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/venv/Scripts/plot_test.py" line="91" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/../../Global_Synthesis/Data_compile_output/Trans_Concat_climate_corr.py" description="input_prep = pd.concat([input_prep,start],axis=1)" line="297" />
+    <bookmark url="file://$PROJECT_DIR$/../../Global_Synthesis/Deep_learning/CODES_Data_prep/Data_transform_ann_input_data_prep_single_year.py" description="    Target_df = pd.read_csv(&quot;D:\\MEGA\\Live_cases\..." line="25" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41441186-c92f-481f-9311-6f0d96592b86" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Scripts/TR_SNP.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3625">
+              <caret line="167" column="45" selection-start-line="167" selection-start-column="45" selection-end-line="167" selection-end-column="45" />
+              <folding>
+                <element signature="e#1379#1399#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Scripts/TR_SNP_latlon.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/Scripts/plot_all_allometry.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6400">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#34#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Scripts/plot_all_temporal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Scripts/open_metafile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1150">
+              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Scripts/TR_SNP_latlon/TR_SNP_latlon.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Scripts/plot_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1750">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
+              <folding>
+                <element signature="e#75#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/software/Python3.7.3/Lib/site-packages/pandas/core/indexes/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76350">
+              <caret line="3117" selection-start-line="3117" selection-end-line="3117" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/software/Python3.7.3/Lib/site-packages/pandas/core/series.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17225">
+              <caret line="766" selection-start-line="766" selection-end-line="766" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/software/Python3.7.3/Lib/site-packages/pandas/core/internals.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106325">
+              <caret line="4337" selection-start-line="4337" selection-end-line="4337" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>lat_in</find>
+      <find>TRW</find>
+      <find>without</find>
+      <find>drop</find>
+      <find>mf</find>
+      <find>file</find>
+      <find>PIRI</find>
+      <find>SAPC</find>
+      <find>print</find>
+      <find>bingo</find>
+      <find>-8</find>
+      <find>pdf_dia</find>
+      <find>pdf_age_mean1</find>
+      <find>dplR</find>
+      <find>age</find>
+      <find>PINE</find>
+      <find>PIHE</find>
+      <find>QUSP</find>
+      <find>QURO</find>
+      <find>biomass</find>
+      <find>PIFL</find>
+      <find>plot</find>
+      <find>plot_all</find>
+      <find>ABAL</find>
+      <find>ABLA</find>
+      <find>biomass = math.exp(-2.3123  + 2.3482 * math.log(dbh))</find>
+      <find>1</find>
+      <find>PCGL</find>
+      <find>0.998</find>
+      <find>multiple_site</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>2</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/venv/Scripts/GFNWE.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/setup.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/try_test.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/plot_test.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/TR_SNP_latlon.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/hello.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/open_metafile.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/plot.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/plot_all_temporal.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/plot_age_only.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/TR_SNP.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/allometric_dict.py" />
+        <option value="$PROJECT_DIR$/venv/Scripts/plot_all_allometry.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TR_SNP_V1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TR_SNP_V1.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TR_SNP_V1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TR_SNP_V1.0" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TR_SNP_V1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TR_SNP_V1.0" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/Scripts" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MEGA\Live_cases\Hybrid\Tree_ring_data_collection_NOAA_ITRDB\TR_SNP_V1.0\venv\Scripts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.TR_SNP">
+    <configuration name="TR_SNP" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TR_SNP_V1.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Scripts/TR_SNP.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TR_SNP_V1.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Scripts/hello.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python">
+      <module name="TR_SNP_V1.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Scripts/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.TR_SNP" />
+        <item itemvalue="Python.TR_SNP" />
+        <item itemvalue="Python.hello" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41441186-c92f-481f-9311-6f0d96592b86" name="Default Changelist" comment="" />
+      <created>1560511345866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560511345866</updated>
+      <workItem from="1560511357590" duration="14695000" />
+      <workItem from="1560640351580" duration="1882000" />
+      <workItem from="1560686480858" duration="13844000" />
+      <workItem from="1560702975630" duration="5911000" />
+      <workItem from="1560761364741" duration="1751000" />
+      <workItem from="1560778103006" duration="4924000" />
+      <workItem from="1560805293810" duration="17698000" />
+      <workItem from="1561297771923" duration="10000" />
+      <workItem from="1561467529488" duration="3239000" />
+      <workItem from="1561928911036" duration="945000" />
+      <workItem from="1561935388109" duration="3326000" />
+      <workItem from="1561979039441" duration="5389000" />
+      <workItem from="1562075064047" duration="2704000" />
+      <workItem from="1562158949939" duration="2555000" />
+      <workItem from="1562596138916" duration="895000" />
+      <workItem from="1562750210631" duration="32828000" />
+      <workItem from="1563069620013" duration="386000" />
+      <workItem from="1563712785885" duration="53000" />
+      <workItem from="1563822785103" duration="6000" />
+      <workItem from="1563963708210" duration="655000" />
+      <workItem from="1564215910094" duration="1418000" />
+      <workItem from="1564225952240" duration="383000" />
+      <workItem from="1573307153701" duration="979000" />
+      <workItem from="1573673929596" duration="1966000" />
+      <workItem from="1574080928838" duration="4478000" />
+      <workItem from="1574862024567" duration="598000" />
+      <workItem from="1576546090321" duration="14000" />
+      <workItem from="1576975252071" duration="3976000" />
+      <workItem from="1576980935543" duration="5446000" />
+      <workItem from="1576990075687" duration="376000" />
+      <workItem from="1576990675162" duration="864000" />
+      <workItem from="1576991804292" duration="3380000" />
+      <workItem from="1577041344751" duration="11160000" />
+      <workItem from="1577313838845" duration="1689000" />
+      <workItem from="1577316332745" duration="30000" />
+      <workItem from="1577316643325" duration="55000" />
+      <workItem from="1577316732867" duration="13723000" />
+      <workItem from="1577379246540" duration="3489000" />
+      <workItem from="1577965437657" duration="1611000" />
+      <workItem from="1578013633581" duration="2599000" />
+      <workItem from="1579544275848" duration="17655000" />
+      <workItem from="1579608040843" duration="2721000" />
+      <workItem from="1579612546513" duration="2360000" />
+      <workItem from="1579614950308" duration="8515000" />
+      <workItem from="1579866400444" duration="2421000" />
+      <workItem from="1580213119891" duration="3438000" />
+      <workItem from="1581515493024" duration="1374000" />
+      <workItem from="1581517477444" duration="2365000" />
+      <workItem from="1581519864494" duration="287000" />
+      <workItem from="1581520161706" duration="168000" />
+      <workItem from="1581520337035" duration="79000" />
+      <workItem from="1581520427858" duration="751000" />
+      <workItem from="1581521187815" duration="3183000" />
+      <workItem from="1581693762235" duration="1798000" />
+      <workItem from="1581720671065" duration="579000" />
+      <workItem from="1581973085116" duration="18928000" />
+      <workItem from="1582081566344" duration="1603000" />
+      <workItem from="1582413750397" duration="781000" />
+      <workItem from="1582424960681" duration="634000" />
+      <workItem from="1583863471957" duration="1746000" />
+      <workItem from="1583872615424" duration="786000" />
+      <workItem from="1583925427631" duration="632000" />
+      <workItem from="1583926463758" duration="290000" />
+      <workItem from="1583927334542" duration="3820000" />
+      <workItem from="1583938230800" duration="1874000" />
+      <workItem from="1584097680740" duration="2504000" />
+      <workItem from="1584353264426" duration="2133000" />
+      <workItem from="1584476371945" duration="1894000" />
+      <workItem from="1585411126014" duration="2000" />
+      <workItem from="1585771562581" duration="3199000" />
+      <workItem from="1585870462786" duration="1197000" />
+      <workItem from="1585959244339" duration="1217000" />
+      <workItem from="1586185569030" duration="1812000" />
+      <workItem from="1586938199766" duration="3326000" />
+      <workItem from="1587067568212" duration="15281000" />
+      <workItem from="1587224641494" duration="7351000" />
+      <workItem from="1587248779341" duration="16125000" />
+      <workItem from="1587378867592" duration="15674000" />
+      <workItem from="1587468275313" duration="314000" />
+      <workItem from="1587469331962" duration="2987000" />
+      <workItem from="1587473597563" duration="1920000" />
+      <workItem from="1587479435760" duration="10246000" />
+      <workItem from="1587507554317" duration="75000" />
+      <workItem from="1587507858423" duration="8968000" />
+      <workItem from="1587806171603" duration="4004000" />
+      <workItem from="1588082066339" duration="590000" />
+      <workItem from="1588107781947" duration="1223000" />
+      <workItem from="1588196807601" duration="583000" />
+      <workItem from="1588374965141" duration="1200000" />
+      <workItem from="1588713726240" duration="584000" />
+      <workItem from="1589758800356" duration="694000" />
+      <workItem from="1591101947535" duration="46555000" />
+      <workItem from="1592415822678" duration="609000" />
+      <workItem from="1593294110162" duration="1056000" />
+      <workItem from="1593953466522" duration="6398000" />
+      <workItem from="1594334684593" duration="30124000" />
+      <workItem from="1594744764353" duration="1450000" />
+      <workItem from="1594746432823" duration="29957000" />
+      <workItem from="1595091606636" duration="580000" />
+      <workItem from="1599933942961" duration="5693000" />
+      <workItem from="1600792133443" duration="594000" />
+      <workItem from="1601085177029" duration="590000" />
+      <workItem from="1601454270336" duration="595000" />
+      <workItem from="1601872864116" duration="591000" />
+      <workItem from="1611061577594" duration="1832000" />
+      <workItem from="1611218230417" duration="68000" />
+      <workItem from="1611756040484" duration="697000" />
+      <workItem from="1612512264149" duration="2307000" />
+      <workItem from="1619439319721" duration="54000" />
+      <workItem from="1619886338896" duration="592000" />
+      <workItem from="1627174253492" duration="384000" />
+      <workItem from="1627394639708" duration="733000" />
+      <workItem from="1631448157117" duration="3144000" />
+      <workItem from="1631614924699" duration="142000" />
+      <workItem from="1663087511230" duration="92000" />
+      <workItem from="1663143149913" duration="15636000" />
+      <workItem from="1663245014167" duration="6754000" />
+      <workItem from="1663391408570" duration="3883000" />
+      <workItem from="1663429893932" duration="1218000" />
+      <workItem from="1666847783153" duration="3084000" />
+      <workItem from="1667243740682" duration="587000" />
+      <workItem from="1668336609724" duration="8056000" />
+      <workItem from="1668621814500" duration="214000" />
+      <workItem from="1668773338982" duration="2981000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="533071000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29731545" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7764141" weight="0.23338048" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.22358592" side_tool="true" weight="0.23369566" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.49786553" weight="0.32670453" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8080537" weight="0.16193181" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.9220918" visible="true" weight="0.4318182" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3744799" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TR_SNP_V1_0$TR_SNP.coverage" NAME="TR_SNP Coverage Results" MODIFIED="1576986199641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Scripts" />
+    <SUITE FILE_PATH="coverage/TR_SNP_V1_0$setup.coverage" NAME="setup Coverage Results" MODIFIED="1560806045296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Scripts" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/build_2019_7_2_beta/exe.win-amd64-3.7/plot.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/setuptest1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/setuptest2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Global_Synthesis/Data_compile_output/plot_species.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Python3.7.3/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42525">
+          <caret line="1704" selection-start-line="1704" selection-end-line="1704" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Python3.7.3/Lib/site-packages/pandas/core/reshape/merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Python3.7.3/Lib/site-packages/rpy2/robjects/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2325">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/GFNWE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/try_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Python3.7.3/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95854">
+          <caret line="4414" selection-start-line="4414" selection-end-line="4414" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/BioC_mirrors.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_import_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/plot_age_only.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding>
+            <element signature="e#38#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/allometric_dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3986">
+          <caret line="263" column="33" lean-forward="true" selection-start-line="263" selection-start-column="33" selection-end-line="263" selection-end-column="33" />
+          <folding>
+            <element signature="e#68#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/TR_SNP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3625">
+          <caret line="167" column="45" selection-start-line="167" selection-start-column="45" selection-end-line="167" selection-end-column="45" />
+          <folding>
+            <element signature="e#1379#1399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/TR_SNP_latlon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/plot_all_temporal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/open_metafile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/TR_SNP_latlon/TR_SNP_latlon.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/plot_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="e#75#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Python3.7.3/Lib/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76350">
+          <caret line="3117" selection-start-line="3117" selection-end-line="3117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Python3.7.3/Lib/site-packages/pandas/core/series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17225">
+          <caret line="766" selection-start-line="766" selection-end-line="766" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Python3.7.3/Lib/site-packages/pandas/core/internals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106325">
+          <caret line="4337" selection-start-line="4337" selection-end-line="4337" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/plot_all_allometry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6400">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#34#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

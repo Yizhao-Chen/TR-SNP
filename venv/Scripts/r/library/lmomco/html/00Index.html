@@ -1,0 +1,930 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>R: L-Moments, Censored L-Moments, Trimmed L-Moments, L-Comoments,
+and Many Distributions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+<h1> L-Moments, Censored L-Moments, Trimmed L-Moments, L-Comoments,
+and Many Distributions
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;lmomco&rsquo; version 2.3.2</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+<li><a href="../NEWS">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p style="text-align: center;">
+<a href="# "> </a>
+<a href="#A">A</a>
+<a href="#B">B</a>
+<a href="#C">C</a>
+<a href="#D">D</a>
+<a href="#E">E</a>
+<a href="#F">F</a>
+<a href="#G">G</a>
+<a href="#H">H</a>
+<a href="#I">I</a>
+<a href="#L">L</a>
+<a href="#M">M</a>
+<a href="#N">N</a>
+<a href="#P">P</a>
+<a href="#Q">Q</a>
+<a href="#R">R</a>
+<a href="#S">S</a>
+<a href="#T">T</a>
+<a href="#U">U</a>
+<a href="#V">V</a>
+<a href="#X">X</a>
+<a href="#Z">Z</a>
+</p>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="lmomco-package.html">lmomco-package</a></td>
+<td>L-moments, Censored L-moments, Trimmed L-moments, L-comoments, and Many Distributions</td></tr>
+</table>
+
+<h2><a name="A">-- A --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="add.lmomco.axis.html">add.lmomco.axis</a></td>
+<td>Add an lmomco Axis to a Plot</td></tr>
+<tr><td style="width: 25%;"><a href="add.log.axis.html">add.log.axis</a></td>
+<td>Add a Polished log Axis to a Plot</td></tr>
+<tr><td style="width: 25%;"><a href="amarilloprecip.html">amarilloprecip</a></td>
+<td>Annual Maximum Precipitation Data for Amarillo, Texas</td></tr>
+<tr><td style="width: 25%;"><a href="Apwm2BpwmRC.html">Apwm2BpwmRC</a></td>
+<td>Conversion between A- and B-Type Probability-Weighted Moments for Right-Tail Censoring of an Appropriate Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.lmom.valid.html">are.lmom.valid</a></td>
+<td>Are the L-moments valid</td></tr>
+<tr><td style="width: 25%;"><a href="are.par.valid.html">are.par.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.paraep4.valid.html">are.paraep4.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the 4-Parameter Asymmetric Exponential Power Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parcau.valid.html">are.parcau.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Cauchy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.paremu.valid.html">are.paremu.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Eta-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parexp.valid.html">are.parexp.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.pargam.valid.html">are.pargam.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Gamma Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.pargep.valid.html">are.pargep.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Generalized Exponential Poisson Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.pargev.valid.html">are.pargev.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Generalized Extreme Value Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.pargld.valid.html">are.pargld.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Generalized Lambda Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parglo.valid.html">are.parglo.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Generalized Logistic Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.pargno.valid.html">are.pargno.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Generalized Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.pargov.valid.html">are.pargov.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Govindarajulu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.pargpa.valid.html">are.pargpa.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Generalized Pareto Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.pargum.valid.html">are.pargum.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parkap.valid.html">are.parkap.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Kappa Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parkmu.valid.html">are.parkmu.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Kappa-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parkur.valid.html">are.parkur.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Kumaraswamy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parlap.valid.html">are.parlap.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Laplace Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parlmrq.valid.html">are.parlmrq.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Linear Mean Residual Quantile Function Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parln3.valid.html">are.parln3.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the 3-Parameter Log-Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parnor.valid.html">are.parnor.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parpe3.valid.html">are.parpe3.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Pearson Type III Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parray.valid.html">are.parray.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Rayleigh Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parrevgum.valid.html">are.parrevgum.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Reverse Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parrice.valid.html">are.parrice.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Rice Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parsla.valid.html">are.parsla.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Slash Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parst3.valid.html">are.parst3.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the 3-Parameter Student t Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.partexp.valid.html">are.partexp.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Truncated Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.partri.valid.html">are.partri.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Asymmetric Triangular Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parwak.valid.html">are.parwak.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Wakeby Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="are.parwei.valid.html">are.parwei.valid</a></td>
+<td>Are the Distribution Parameters Consistent with the Weibull Distribution</td></tr>
+</table>
+
+<h2><a name="B">-- B --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="BEhypergeo.html">BarnesExtendedHypergeometric</a></td>
+<td>Barnes Extended Hypergeometric Function</td></tr>
+<tr><td style="width: 25%;"><a href="BEhypergeo.html">BEhypergeo</a></td>
+<td>Barnes Extended Hypergeometric Function</td></tr>
+<tr><td style="width: 25%;"><a href="bfrlmomco.html">bfrlmomco</a></td>
+<td>Bonferroni Curve of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="Bpwm2ApwmRC.html">Bpwm2ApwmRC</a></td>
+<td>Conversion between B- and A-Type Probability-Weighted Moments for Right-Tail Censoring of an Appropriate Distribution</td></tr>
+</table>
+
+<h2><a name="C">-- C --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="canyonprecip.html">canyonprecip</a></td>
+<td>Annual Maximum Precipitation Data for Canyon, Texas</td></tr>
+<tr><td style="width: 25%;"><a href="cdf2lmom.html">cdf2lmom</a></td>
+<td>Compute an L-moment from Cumulative Distribution Function</td></tr>
+<tr><td style="width: 25%;"><a href="cdf2lmoms.html">cdf2lmoms</a></td>
+<td>Compute L-moments from Cumulative Distribution Function</td></tr>
+<tr><td style="width: 25%;"><a href="cdfaep4.html">cdfaep4</a></td>
+<td>Cumulative Distribution Function of the 4-Parameter Asymmetric Exponential Power Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfcau.html">cdfcau</a></td>
+<td>Cumulative Distribution Function of the Cauchy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfemu.html">cdfemu</a></td>
+<td>Cumulative Distribution Function of the Eta-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfexp.html">cdfexp</a></td>
+<td>Cumulative Distribution Function of the Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfgam.html">cdfgam</a></td>
+<td>Cumulative Distribution Function of the Gamma Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfgep.html">cdfgep</a></td>
+<td>Cumulative Distribution Function of the Generalized Exponential Poisson Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfgev.html">cdfgev</a></td>
+<td>Cumulative Distribution Function of the Generalized Extreme Value Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfgld.html">cdfgld</a></td>
+<td>Cumulative Distribution Function of the Generalized Lambda Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfglo.html">cdfglo</a></td>
+<td>Cumulative Distribution Function of the Generalized Logistic Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfgno.html">cdfgno</a></td>
+<td>Cumulative Distribution Function of the Generalized Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfgov.html">cdfgov</a></td>
+<td>Cumulative Distribution Function of the Govindarajulu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfgpa.html">cdfgpa</a></td>
+<td>Cumulative Distribution Function of the Generalized Pareto Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfgum.html">cdfgum</a></td>
+<td>Cumulative Distribution Function of the Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfkap.html">cdfkap</a></td>
+<td>Cumulative Distribution Function of the Kappa Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfkmu.html">cdfkmu</a></td>
+<td>Cumulative Distribution Function of the Kappa-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfkur.html">cdfkur</a></td>
+<td>Cumulative Distribution Function of the Kumaraswamy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdflap.html">cdflap</a></td>
+<td>Cumulative Distribution Function of the Laplace Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdflmrq.html">cdflmrq</a></td>
+<td>Cumulative Distribution Function of the Linear Mean Residual Quantile Function Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfln3.html">cdfln3</a></td>
+<td>Cumulative Distribution Function of the 3-Parameter Log-Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfnor.html">cdfnor</a></td>
+<td>Cumulative Distribution Function of the Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfpe3.html">cdfpe3</a></td>
+<td>Cumulative Distribution Function of the Pearson Type III Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfray.html">cdfray</a></td>
+<td>Cumulative Distribution Function of the Rayleigh Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfrevgum.html">cdfrevgum</a></td>
+<td>Cumulative Distribution Function of the Reverse Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfrice.html">cdfrice</a></td>
+<td>Cumulative Distribution Function of the Rice Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfsla.html">cdfsla</a></td>
+<td>Cumulative Distribution Function of the Slash Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfst3.html">cdfst3</a></td>
+<td>Cumulative Distribution Function of the 3-Parameter Student t Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdftexp.html">cdftexp</a></td>
+<td>Cumulative Distribution Function of the Truncated Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdftri.html">cdftri</a></td>
+<td>Cumulative Distribution Function of the Asymmetric Triangular Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfwak.html">cdfwak</a></td>
+<td>Cumulative Distribution Function of the Wakeby Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cdfwei.html">cdfwei</a></td>
+<td>Cumulative Distribution Function of the Weibull Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="check.fs.html">check.fs</a></td>
+<td>Check Vector of Nonexceedance Probabilities</td></tr>
+<tr><td style="width: 25%;"><a href="check.pdf.html">check.pdf</a></td>
+<td>Check and Potentially Graph Probability Density Functions</td></tr>
+<tr><td style="width: 25%;"><a href="claudeprecip.html">claudeprecip</a></td>
+<td>Annual Maximum Precipitation Data for Claude, Texas</td></tr>
+<tr><td style="width: 25%;"><a href="clearforkporosity.html">clearforkporosity</a></td>
+<td>Porosity Data</td></tr>
+<tr><td style="width: 25%;"><a href="cmlmomco.html">cmlmomco</a></td>
+<td>Conditional Mean Residual Quantile Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="cvm.test.lmomco.html">cvm.test.lmomco</a></td>
+<td>Cramér-von Mises Test for Goodness-of-Fit</td></tr>
+</table>
+
+<h2><a name="D">-- D --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="dat2bernqua.html">dat2bernqua</a></td>
+<td>Observed Data to Empirical Quantiles through Bernstein or Kantorovich Polynomials</td></tr>
+<tr><td style="width: 25%;"><a href="dat2bernquaf.html">dat2bernquaf</a></td>
+<td>Equivalent Nonexceedance Probability for a Given Value through Observed Data to Empirical Quantiles through Bernstein or Kantorovich Polynomials</td></tr>
+<tr><td style="width: 25%;"><a href="disfitqua.html">disfitqua</a></td>
+<td>Fit a Distribution using Minimization of Available Quantiles</td></tr>
+<tr><td style="width: 25%;"><a href="dist.list.html">dist.list</a></td>
+<td>List of Distribution Names</td></tr>
+<tr><td style="width: 25%;"><a href="dlmomco.html">dlmomco</a></td>
+<td>Probability Density Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="DrillBitLifetime.html">DrillBitLifetime</a></td>
+<td>Lifetime of Drill Bits</td></tr>
+</table>
+
+<h2><a name="E">-- E --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="expect.max.ostat.html">eostat</a></td>
+<td>Compute the Expectation of a Maximum (or Minimum and others) Order Statistic</td></tr>
+<tr><td style="width: 25%;"><a href="expect.max.ostat.html">expect.max.ostat</a></td>
+<td>Compute the Expectation of a Maximum (or Minimum and others) Order Statistic</td></tr>
+<tr><td style="width: 25%;"><a href="expect.max.ostat.html">expect.min.ostat</a></td>
+<td>Compute the Expectation of a Maximum (or Minimum and others) Order Statistic</td></tr>
+</table>
+
+<h2><a name="F">-- F --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="f2f.html">f2f</a></td>
+<td>Subsetting of Nonexceedance Probabilities Related to Conditional Probability Adjustment</td></tr>
+<tr><td style="width: 25%;"><a href="f2flo.html">f2flo</a></td>
+<td>Conversion of Annual Nonexceedance Probability to Conditional Probability Nonexceedance Probabilities</td></tr>
+<tr><td style="width: 25%;"><a href="f2fpds.html">f2fpds</a></td>
+<td>Conversion of Annual Nonexceedance Probability to Partial Duration Nonexceedance Probability</td></tr>
+<tr><td style="width: 25%;"><a href="fliplmoms.html">fliplmoms</a></td>
+<td>Flip L-moments by Flip Attribute in L-moment Vector</td></tr>
+<tr><td style="width: 25%;"><a href="flo2f.html">flo2f</a></td>
+<td>Conversion of Conditional Nonexceedance Probability to Annual Nonexceedance Probability</td></tr>
+<tr><td style="width: 25%;"><a href="fpds2f.html">fpds2f</a></td>
+<td>Conversion of Partial-Duration Nonexceedance Probability to Annual Nonexceedance Probability</td></tr>
+<tr><td style="width: 25%;"><a href="freq.curve.all.html">freq.curve.all</a></td>
+<td>Compute Frequency Curve for Almost All Distributions</td></tr>
+</table>
+
+<h2><a name="G">-- G --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="gen.freq.curves.html">gen.freq.curves</a></td>
+<td>Plot Randomly Generated Frequency Curves from a Parent Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="genci.simple.html">genci</a></td>
+<td>Generate (Estimate) Confidence Intervals for Quantiles of a Parent Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="genci.simple.html">genci.simple</a></td>
+<td>Generate (Estimate) Confidence Intervals for Quantiles of a Parent Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="gini.mean.diff.html">gini.mean.diff</a></td>
+<td>Gini Mean Difference Statistic</td></tr>
+<tr><td style="width: 25%;"><a href="grv2prob.html">grv2prob</a></td>
+<td>Convert a Vector of Gumbel Reduced Variates to Annual Nonexceedance Probabilities</td></tr>
+</table>
+
+<h2><a name="H">-- H --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="harmonic.mean.html">harmonic.mean</a></td>
+<td>The Harmonic Mean with Zero-Value Correction</td></tr>
+<tr><td style="width: 25%;"><a href="headrick.sheng.lalpha.html">headrick.sheng.lalpha</a></td>
+<td>The Sample Headrick and Sheng L-alpha</td></tr>
+<tr><td style="width: 25%;"><a href="herefordprecip.html">herefordprecip</a></td>
+<td>Annual Maximum Precipitation Data for Hereford, Texas</td></tr>
+<tr><td style="width: 25%;"><a href="hlmomco.html">hlmomco</a></td>
+<td>Hazard Functions of the Distributions</td></tr>
+</table>
+
+<h2><a name="I">-- I --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="IRSrefunds.by.state.html">IRSrefunds.by.state</a></td>
+<td>U.S. Internal Revenue Service Refunds by State for Fiscal Year 2006</td></tr>
+<tr><td style="width: 25%;"><a href="is.aep4.html">is.aep4</a></td>
+<td>Is a Distribution Parameter Object Typed as 4-Parameter Asymmetric Exponential Power</td></tr>
+<tr><td style="width: 25%;"><a href="is.cau.html">is.cau</a></td>
+<td>Is a Distribution Parameter Object Typed as Cauchy</td></tr>
+<tr><td style="width: 25%;"><a href="is.emu.html">is.emu</a></td>
+<td>Is a Distribution Parameter Object Typed as Eta-Mu</td></tr>
+<tr><td style="width: 25%;"><a href="is.exp.html">is.exp</a></td>
+<td>Is a Distribution Parameter Object Typed as Exponential</td></tr>
+<tr><td style="width: 25%;"><a href="is.gam.html">is.gam</a></td>
+<td>Is a Distribution Parameter Object Typed as Gamma</td></tr>
+<tr><td style="width: 25%;"><a href="is.gep.html">is.gep</a></td>
+<td>Is a Distribution Parameter Object Typed as Generalized Extreme Value</td></tr>
+<tr><td style="width: 25%;"><a href="is.gev.html">is.gev</a></td>
+<td>Is a Distribution Parameter Object Typed as Generalized Extreme Value</td></tr>
+<tr><td style="width: 25%;"><a href="is.gld.html">is.gld</a></td>
+<td>Is a Distribution Parameter Object Typed as Generalized Lambda</td></tr>
+<tr><td style="width: 25%;"><a href="is.glo.html">is.glo</a></td>
+<td>Is a Distribution Parameter Object Typed as Generalized Logistic</td></tr>
+<tr><td style="width: 25%;"><a href="is.gno.html">is.gno</a></td>
+<td>Is a Distribution Parameter Object Typed as Generalized Normal</td></tr>
+<tr><td style="width: 25%;"><a href="is.gov.html">is.gov</a></td>
+<td>Is a Distribution Parameter Object Typed as Govindarajulu</td></tr>
+<tr><td style="width: 25%;"><a href="is.gpa.html">is.gpa</a></td>
+<td>Is a Distribution Parameter Object Typed as Generalized Pareto</td></tr>
+<tr><td style="width: 25%;"><a href="is.gum.html">is.gum</a></td>
+<td>Is a Distribution Parameter Object Typed as Gumbel</td></tr>
+<tr><td style="width: 25%;"><a href="is.kap.html">is.kap</a></td>
+<td>Is a Distribution Parameter Object Typed as Kappa</td></tr>
+<tr><td style="width: 25%;"><a href="is.kmu.html">is.kmu</a></td>
+<td>Is a Distribution Parameter Object Typed as Kappa-Mu</td></tr>
+<tr><td style="width: 25%;"><a href="is.kur.html">is.kur</a></td>
+<td>Is a Distribution Parameter Object Typed as Kumaraswamy</td></tr>
+<tr><td style="width: 25%;"><a href="is.lap.html">is.lap</a></td>
+<td>Is a Distribution Parameter Object Typed as Laplace</td></tr>
+<tr><td style="width: 25%;"><a href="is.lmrq.html">is.lmrq</a></td>
+<td>Is a Distribution Parameter Object Typed as Linear Mean Residual Quantile Function</td></tr>
+<tr><td style="width: 25%;"><a href="is.ln3.html">is.ln3</a></td>
+<td>Is a Distribution Parameter Object Typed as 3-Parameter Log-Normal</td></tr>
+<tr><td style="width: 25%;"><a href="is.nor.html">is.nor</a></td>
+<td>Is a Distribution Parameter Object Typed as Normal</td></tr>
+<tr><td style="width: 25%;"><a href="is.pe3.html">is.pe3</a></td>
+<td>Is a Distribution Parameter Object Typed as Pearson Type III</td></tr>
+<tr><td style="width: 25%;"><a href="is.ray.html">is.ray</a></td>
+<td>Is a Distribution Parameter Object Typed as Rayleigh</td></tr>
+<tr><td style="width: 25%;"><a href="is.revgum.html">is.revgum</a></td>
+<td>Is a Distribution Parameter Object Typed as Reverse Gumbel</td></tr>
+<tr><td style="width: 25%;"><a href="is.rice.html">is.rice</a></td>
+<td>Is a Distribution Parameter Object Typed as Rice</td></tr>
+<tr><td style="width: 25%;"><a href="is.sla.html">is.sla</a></td>
+<td>Is a Distribution Parameter Object Typed as Slash</td></tr>
+<tr><td style="width: 25%;"><a href="is.st3.html">is.st3</a></td>
+<td>Is a Distribution Parameter Object Typed as 3-Parameter Student t Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="is.texp.html">is.texp</a></td>
+<td>Is a Distribution Parameter Object Typed as Truncated Exponential</td></tr>
+<tr><td style="width: 25%;"><a href="is.tri.html">is.tri</a></td>
+<td>Is a Distribution Parameter Object Typed as Asymmetric Triangular</td></tr>
+<tr><td style="width: 25%;"><a href="is.wak.html">is.wak</a></td>
+<td>Is a Distribution Parameter Object Typed as Wakeby</td></tr>
+<tr><td style="width: 25%;"><a href="is.wei.html">is.wei</a></td>
+<td>Is a Distribution Parameter Object Typed as Weibull</td></tr>
+</table>
+
+<h2><a name="L">-- L --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="LaguerreHalf.html">LaguerreHalf</a></td>
+<td>Laguerre Polynomial (Half)</td></tr>
+<tr><td style="width: 25%;"><a href="headrick.sheng.lalpha.html">lalpha</a></td>
+<td>The Sample Headrick and Sheng L-alpha</td></tr>
+<tr><td style="width: 25%;"><a href="Lcomoment.coefficients.html">Lcomoment.coefficients</a></td>
+<td>L-comoment Coefficient Matrix</td></tr>
+<tr><td style="width: 25%;"><a href="Lcomoment.correlation.html">Lcomoment.correlation</a></td>
+<td>L-correlation Matrix (L-correlation through Sample L-comoments)</td></tr>
+<tr><td style="width: 25%;"><a href="Lcomoment.Lk12.html">Lcomoment.Lk12</a></td>
+<td>Compute a Single Sample L-comoment</td></tr>
+<tr><td style="width: 25%;"><a href="Lcomoment.matrix.html">Lcomoment.matrix</a></td>
+<td>Compute Sample L-comoment Matrix</td></tr>
+<tr><td style="width: 25%;"><a href="Lcomoment.Wk.html">Lcomoment.Wk</a></td>
+<td>Weighting Coefficient for Sample L-comoment</td></tr>
+<tr><td style="width: 25%;"><a href="lcomoms2.html">lcomoms2</a></td>
+<td>The Sample L-comoments for Two Variables</td></tr>
+<tr><td style="width: 25%;"><a href="lkhlmomco.html">lkhlmomco</a></td>
+<td>Leimkuhler Curve of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="lmom.ub.html">lmom.ub</a></td>
+<td>Unbiased Sample L-moments by Direct Sample Estimators</td></tr>
+<tr><td style="width: 25%;"><a href="lmom2par.html">lmom2par</a></td>
+<td>Convert L-moments to the Parameters of a Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmom2pwm.html">lmom2pwm</a></td>
+<td>L-moments to Probability-Weighted Moments</td></tr>
+<tr><td style="width: 25%;"><a href="lmom2vec.html">lmom2vec</a></td>
+<td>Convert an L-moment object to a Vector of L-moments</td></tr>
+<tr><td style="width: 25%;"><a href="lmomaep4.html">lmomaep4</a></td>
+<td>L-moments of the 4-Parameter Asymmetric Exponential Power Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomcau.html">lmomcau</a></td>
+<td>Trimmed L-moments of the Cauchy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomcoBook.html">lmomcoBook</a></td>
+<td>Show the Errata for Asquith (2011) Book</td></tr>
+<tr><td style="width: 25%;"><a href="lmomcoNews.html">lmomcoNews</a></td>
+<td>Show the NEWS file</td></tr>
+<tr><td style="width: 25%;"><a href="lmomemu.html">lmomemu</a></td>
+<td>L-moments of the Eta-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomexp.html">lmomexp</a></td>
+<td>L-moments of the Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomgam.html">lmomgam</a></td>
+<td>L-moments of the Gamma Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomgep.html">lmomgep</a></td>
+<td>L-moments of the Generalized Exponential Poisson Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomgev.html">lmomgev</a></td>
+<td>L-moments of the Generalized Extreme Value Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomgld.html">lmomgld</a></td>
+<td>L-moments of the Generalized Lambda Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomglo.html">lmomglo</a></td>
+<td>L-moments of the Generalized Logistic Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomgno.html">lmomgno</a></td>
+<td>L-moments of the Generalized Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomgov.html">lmomgov</a></td>
+<td>L-moments of the Govindarajulu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomgpa.html">lmomgpa</a></td>
+<td>L-moments of the Generalized Pareto Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomgpaRC.html">lmomgpaRC</a></td>
+<td>B-type L-moments of the Generalized Pareto Distribution with Right-Tail Censoring</td></tr>
+<tr><td style="width: 25%;"><a href="lmomgum.html">lmomgum</a></td>
+<td>L-moments of the Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomkap.html">lmomkap</a></td>
+<td>L-moments of the Kappa Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomkmu.html">lmomkmu</a></td>
+<td>L-moments of the Kappa-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomkur.html">lmomkur</a></td>
+<td>L-moments of the Kumaraswamy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomlap.html">lmomlap</a></td>
+<td>L-moments of the Laplace Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomlmrq.html">lmomlmrq</a></td>
+<td>L-moments of the Linear Mean Residual Quantile Function Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomln3.html">lmomln3</a></td>
+<td>L-moments of the 3-Parameter Log-Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomnor.html">lmomnor</a></td>
+<td>L-moments of the Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmompe3.html">lmompe3</a></td>
+<td>L-moments of the Pearson Type III Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomray.html">lmomray</a></td>
+<td>L-moments of the Rayleigh Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomRCmark.html">lmomRCmark</a></td>
+<td>Sample L-moment for Right-Tail Censoring by a Marking Variable</td></tr>
+<tr><td style="width: 25%;"><a href="lmomrevgum.html">lmomrevgum</a></td>
+<td>L-moments of the Reverse Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomrice.html">lmomrice</a></td>
+<td>L-moments of the Rice Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmoms.html">lmoms</a></td>
+<td>The Sample L-moments and L-moment Ratios</td></tr>
+<tr><td style="width: 25%;"><a href="lmoms.bernstein.html">lmoms.bernstein</a></td>
+<td>Numerically Integrated L-moments of Smoothed Quantiles from Bernstein or Kantorovich Polynomials</td></tr>
+<tr><td style="width: 25%;"><a href="lmoms.bootbarvar.html">lmoms.bootbarvar</a></td>
+<td>The Exact Bootstrap Mean and Variance of L-moments</td></tr>
+<tr><td style="width: 25%;"><a href="lmoms.cov.html">lmoms.cov</a></td>
+<td>Distribution-Free Variance-Covariance Structure of Sample L-moments</td></tr>
+<tr><td style="width: 25%;"><a href="lmomsla.html">lmomsla</a></td>
+<td>Trimmed L-moments of the Slash Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomsRCmark.html">lmomsRCmark</a></td>
+<td>Sample L-moments Moments for Right-Tail Censoring by a Marking Variable</td></tr>
+<tr><td style="width: 25%;"><a href="lmomst3.html">lmomst3</a></td>
+<td>L-moments of the 3-Parameter Student t Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomtexp.html">lmomtexp</a></td>
+<td>L-moments of the Truncated Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomTLgld.html">lmomTLgld</a></td>
+<td>Trimmed L-moments of the Generalized Lambda Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomTLgpa.html">lmomTLgpa</a></td>
+<td>Trimmed L-moments of the Generalized Pareto Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomtri.html">lmomtri</a></td>
+<td>L-moments of the Asymmetric Triangular Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomwak.html">lmomwak</a></td>
+<td>L-moments of the Wakeby Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmomwei.html">lmomwei</a></td>
+<td>L-moments of the Weibull Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmorph.html">lmorph</a></td>
+<td>Morph an L-moment Object</td></tr>
+<tr><td style="width: 25%;"><a href="lmom2par.html">lmr2par</a></td>
+<td>Convert L-moments to the Parameters of a Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="lmrdia.html">lmrdia</a></td>
+<td>L-moment Ratio Diagram Components</td></tr>
+<tr><td style="width: 25%;"><a href="lmrdiscord.html">lmrdiscord</a></td>
+<td>Compute Discordance on L-CV, L-skew, and L-kurtosis</td></tr>
+<tr><td style="width: 25%;"><a href="lrv2prob.html">lrv2prob</a></td>
+<td>Convert a Vector of Logistic Reduced Variates to Annual Nonexceedance Probabilities</td></tr>
+<tr><td style="width: 25%;"><a href="lrzlmomco.html">lrzlmomco</a></td>
+<td>Lorenz Curve of the Distributions</td></tr>
+</table>
+
+<h2><a name="M">-- M --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="mle2par.html">mle2par</a></td>
+<td>Use Maximum Likelihood to Estimate Parameters of a Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="mps2par.html">mps2par</a></td>
+<td>Use Maximum Product of Spacings to Estimate the Parameters of a Distribution</td></tr>
+</table>
+
+<h2><a name="N">-- N --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="nonexceeds.html">nonexceeds</a></td>
+<td>Some Common or Useful Nonexceedance Probabilities</td></tr>
+</table>
+
+<h2><a name="P">-- P --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="par2cdf.html">par2cdf</a></td>
+<td>Cumulative Distribution Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="par2cdf2.html">par2cdf2</a></td>
+<td>Equivalent Cumulative Distribution Function of Two Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="par2lmom.html">par2lmom</a></td>
+<td>Convert the Parameters of a Distribution to the L-moments</td></tr>
+<tr><td style="width: 25%;"><a href="par2pdf.html">par2pdf</a></td>
+<td>Probability Density Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="par2qua.html">par2qua</a></td>
+<td>Quantile Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="par2qua2.html">par2qua2</a></td>
+<td>Equivalent Quantile Function of Two Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="par2qua2lo.html">par2qua2lo</a></td>
+<td>Equivalent Quantile Function of Two Distributions Stemming from Left-Hand Threshold to Setup Conditional Probability Computations</td></tr>
+<tr><td style="width: 25%;"><a href="par2vec.html">par2vec</a></td>
+<td>Convert a Parameter Object to a Vector of Parameters</td></tr>
+<tr><td style="width: 25%;"><a href="paraep4.html">paraep4</a></td>
+<td>Estimate the Parameters of the 4-Parameter Asymmetric Exponential Power Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parcau.html">parcau</a></td>
+<td>Estimate the Parameters of the Cauchy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="paremu.html">paremu</a></td>
+<td>Estimate the Parameters of the Eta-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parexp.html">parexp</a></td>
+<td>Estimate the Parameters of the Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pargam.html">pargam</a></td>
+<td>Estimate the Parameters of the Gamma Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pargep.html">pargep</a></td>
+<td>Estimate the Parameters of the Generalized Exponential Poisson Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pargev.html">pargev</a></td>
+<td>Estimate the Parameters of the Generalized Extreme Value Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pargld.html">pargld</a></td>
+<td>Estimate the Parameters of the Generalized Lambda Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parglo.html">parglo</a></td>
+<td>Estimate the Parameters of the Generalized Logistic Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pargno.html">pargno</a></td>
+<td>Estimate the Parameters of the Generalized Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pargov.html">pargov</a></td>
+<td>Estimate the Parameters of the Govindarajulu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pargpa.html">pargpa</a></td>
+<td>Estimate the Parameters of the Generalized Pareto Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pargpaRC.html">pargpaRC</a></td>
+<td>Estimate the Parameters of the Generalized Pareto Distribution with Right-Tail Censoring</td></tr>
+<tr><td style="width: 25%;"><a href="pargum.html">pargum</a></td>
+<td>Estimate the Parameters of the Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parkap.html">parkap</a></td>
+<td>Estimate the Parameters of the Kappa Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parkmu.html">parkmu</a></td>
+<td>Estimate the Parameters of the Kappa-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parkur.html">parkur</a></td>
+<td>Estimate the Parameters of the Kumaraswamy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parlap.html">parlap</a></td>
+<td>Estimate the Parameters of the Laplace Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parlmrq.html">parlmrq</a></td>
+<td>Estimate the Parameters of the Linear Mean Residual Quantile Function Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parln3.html">parln3</a></td>
+<td>Estimate the Parameters of the 3-Parameter Log-Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parnor.html">parnor</a></td>
+<td>Estimate the Parameters of the Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parpe3.html">parpe3</a></td>
+<td>Estimate the Parameters of the Pearson Type III Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parray.html">parray</a></td>
+<td>Estimate the Parameters of the Rayleigh Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parrevgum.html">parrevgum</a></td>
+<td>Estimate the Parameters of the Reverse Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parrice.html">parrice</a></td>
+<td>Estimate the Parameters of the Rice Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pars2x.html">pars2x</a></td>
+<td>Estimate Quantiles from an Ensemble of Parameters</td></tr>
+<tr><td style="width: 25%;"><a href="parsla.html">parsla</a></td>
+<td>Estimate the Parameters of the Slash Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parst3.html">parst3</a></td>
+<td>Estimate the Parameters of the 3-Parameter Student t Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="partexp.html">partexp</a></td>
+<td>Estimate the Parameters of the Truncated Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parTLgld.html">parTLgld</a></td>
+<td>Estimate the Parameters of the Generalized Lambda Distribution using Trimmed L-moments (t=1)</td></tr>
+<tr><td style="width: 25%;"><a href="parTLgpa.html">parTLgpa</a></td>
+<td>Estimate the Parameters of the Generalized Pareto Distribution using Trimmed L-moments</td></tr>
+<tr><td style="width: 25%;"><a href="partri.html">partri</a></td>
+<td>Estimate the Parameters of the Asymmetric Triangular Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parwak.html">parwak</a></td>
+<td>Estimate the Parameters of the Wakeby Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="parwei.html">parwei</a></td>
+<td>Estimate the Parameters of the Weibull Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfaep4.html">pdfaep4</a></td>
+<td>Probability Density Function of the 4-Parameter Asymmetric Exponential Power Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfcau.html">pdfcau</a></td>
+<td>Probability Density Function of the Cauchy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfemu.html">pdfemu</a></td>
+<td>Probability Density Function of the Eta-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfexp.html">pdfexp</a></td>
+<td>Probability Density Function of the Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfgam.html">pdfgam</a></td>
+<td>Probability Density Function of the Gamma Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfgep.html">pdfgep</a></td>
+<td>Probability Density Function of the Generalized Exponential Poisson Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfgev.html">pdfgev</a></td>
+<td>Probability Density Function of the Generalized Extreme Value Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfgld.html">pdfgld</a></td>
+<td>Probability Density Function of the Generalized Lambda Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfglo.html">pdfglo</a></td>
+<td>Probability Density Function of the Generalized Logistic Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfgno.html">pdfgno</a></td>
+<td>Probability Density Function of the Generalized Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfgov.html">pdfgov</a></td>
+<td>Probability Density Function of the Govindarajulu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfgpa.html">pdfgpa</a></td>
+<td>Probability Density Function of the Generalized Pareto Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfgum.html">pdfgum</a></td>
+<td>Probability Density Function of the Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfkap.html">pdfkap</a></td>
+<td>Probability Density Function of the Kappa Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfkmu.html">pdfkmu</a></td>
+<td>Probability Density Function of the Kappa-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfkur.html">pdfkur</a></td>
+<td>Probability Density Function of the Kumaraswamy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdflap.html">pdflap</a></td>
+<td>Probability Density Function of the Laplace Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdflmrq.html">pdflmrq</a></td>
+<td>Probability Density Function of the Linear Mean Residual Quantile Function Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfln3.html">pdfln3</a></td>
+<td>Probability Density Function of the 3-Parameter Log-Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfnor.html">pdfnor</a></td>
+<td>Probability Density Function of the Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfpe3.html">pdfpe3</a></td>
+<td>Probability Density Function of the Pearson Type III Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfray.html">pdfray</a></td>
+<td>Probability Density Function of the Rayleigh Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfrevgum.html">pdfrevgum</a></td>
+<td>Probability Density Function of the Reverse Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfrice.html">pdfrice</a></td>
+<td>Probability Density Function of the Rice Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfsla.html">pdfsla</a></td>
+<td>Probability Density Function of the Slash Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfst3.html">pdfst3</a></td>
+<td>Probability Density Function of the 3-Parameter Student t Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdftexp.html">pdftexp</a></td>
+<td>Probability Density Function of the Truncated Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdftri.html">pdftri</a></td>
+<td>Probability Density Function of the Asymmetric Triangular Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfwak.html">pdfwak</a></td>
+<td>Probability Density Function of the Wakeby Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pdfwei.html">pdfwei</a></td>
+<td>Probability Density Function of the Weibull Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="pfactor.bernstein.html">pfactor.bernstein</a></td>
+<td>Estimation of Optimal p-factor of Distributional Support Estimation for Smoothed Quantiles from the Bernstein or Kantorovich Polynomials</td></tr>
+<tr><td style="width: 25%;"><a href="plmomco.html">plmomco</a></td>
+<td>Cumulative Distribution Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="plotlmrdia.html">plotlmrdia</a></td>
+<td>Plot L-moment Ratio Diagram</td></tr>
+<tr><td style="width: 25%;"><a href="plotradarlmr.html">plotradarlmr</a></td>
+<td>Plot L-moment Radar Plot (Chart) Graphic</td></tr>
+<tr><td style="width: 25%;"><a href="pmoms.html">pmoms</a></td>
+<td>The Sample Product Moments: Mean, Standard Deviation, Skew, and Excess Kurtosis</td></tr>
+<tr><td style="width: 25%;"><a href="pp.html">pp</a></td>
+<td>Plotting-Position Formula</td></tr>
+<tr><td style="width: 25%;"><a href="pp.f.html">pp.f</a></td>
+<td>Quantile Function of the Ranks of Plotting Positions</td></tr>
+<tr><td style="width: 25%;"><a href="pp.median.html">pp.median</a></td>
+<td>Quantile Function of the Ranks of Plotting Positions</td></tr>
+<tr><td style="width: 25%;"><a href="prettydist.html">prettydist</a></td>
+<td>A Pretty List of Distribution Names</td></tr>
+<tr><td style="width: 25%;"><a href="prob2grv.html">prob2grv</a></td>
+<td>Convert a Vector of Annual Nonexceedance Probabilities to Gumbel Reduced Variates</td></tr>
+<tr><td style="width: 25%;"><a href="prob2lrv.html">prob2lrv</a></td>
+<td>Convert a Vector of Annual Nonexceedance Probabilities to Logistic Reduced Variates</td></tr>
+<tr><td style="width: 25%;"><a href="prob2T.html">prob2T</a></td>
+<td>Convert a Vector of Annual Nonexceedance Probabilities to T-year Return Periods</td></tr>
+<tr><td style="width: 25%;"><a href="pwm.html">pwm</a></td>
+<td>Unbiased Sample Probability-Weighted Moments</td></tr>
+<tr><td style="width: 25%;"><a href="pwm.beta2alpha.html">pwm.alpha2beta</a></td>
+<td>Conversion of Beta to Alpha Probability-Weighted Moments (PWMs) or Alpha to Beta PWMs</td></tr>
+<tr><td style="width: 25%;"><a href="pwm.beta2alpha.html">pwm.beta2alpha</a></td>
+<td>Conversion of Beta to Alpha Probability-Weighted Moments (PWMs) or Alpha to Beta PWMs</td></tr>
+<tr><td style="width: 25%;"><a href="pwm.gev.html">pwm.gev</a></td>
+<td>Generalized Extreme Value Plotting-Position Probability-Weighted Moments</td></tr>
+<tr><td style="width: 25%;"><a href="pwm.pp.html">pwm.pp</a></td>
+<td>Plotting-Position Sample Probability-Weighted Moments</td></tr>
+<tr><td style="width: 25%;"><a href="pwm.ub.html">pwm.ub</a></td>
+<td>Unbiased Sample Probability-Weighted Moments</td></tr>
+<tr><td style="width: 25%;"><a href="pwm2lmom.html">pwm2lmom</a></td>
+<td>Probability-Weighted Moments to L-moments</td></tr>
+<tr><td style="width: 25%;"><a href="pwm2vec.html">pwm2vec</a></td>
+<td>Convert Probability-Weighted Moment object to a Vector</td></tr>
+<tr><td style="width: 25%;"><a href="pwmLC.html">pwmLC</a></td>
+<td>Sample Probability-Weighted Moments for Left-Tail Censoring</td></tr>
+<tr><td style="width: 25%;"><a href="pwmRC.html">pwmRC</a></td>
+<td>Sample Probability-Weighted Moments for Right-Tail Censoring</td></tr>
+</table>
+
+<h2><a name="Q">-- Q --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="qlmomco.html">qlmomco</a></td>
+<td>Quantile Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="qua.ostat.html">qua.ostat</a></td>
+<td>Compute the Quantiles of the Distribution of an Order Statistic</td></tr>
+<tr><td style="width: 25%;"><a href="qua2ci.simple.html">qua2ci</a></td>
+<td>Estimate a Confidence Interval for a Single Quantile of a Parent Distribution by a Simple Algorithm</td></tr>
+<tr><td style="width: 25%;"><a href="qua2ci.cov.html">qua2ci.cov</a></td>
+<td>Estimate a Confidence Interval for Quantiles of a Parent Distribution using Sample Variance-Covariances of L-moments</td></tr>
+<tr><td style="width: 25%;"><a href="qua2ci.simple.html">qua2ci.simple</a></td>
+<td>Estimate a Confidence Interval for a Single Quantile of a Parent Distribution by a Simple Algorithm</td></tr>
+<tr><td style="width: 25%;"><a href="quaaep4.html">quaaep4</a></td>
+<td>Quantile Function of the 4-Parameter Asymmetric Exponential Power Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quaaep4kapmix.html">quaaep4kapmix</a></td>
+<td>Quantile Function Mixture Between the 4-Parameter Asymmetric Exponential Power and Kappa Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="quacau.html">quacau</a></td>
+<td>Quantile Function of the Cauchy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quaemu.html">quaemu</a></td>
+<td>Quantile Function of the Eta-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quaexp.html">quaexp</a></td>
+<td>Quantile Function of the Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quagam.html">quagam</a></td>
+<td>Quantile Function of the Gamma Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quagep.html">quagep</a></td>
+<td>Quantile Function of the Generalized Exponential Poisson Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quagev.html">quagev</a></td>
+<td>Quantile Function of the Generalized Extreme Value Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quagld.html">quagld</a></td>
+<td>Quantile Function of the Generalized Lambda Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quaglo.html">quaglo</a></td>
+<td>Quantile Function of the Generalized Logistic Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quagno.html">quagno</a></td>
+<td>Quantile Function of the Generalized Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quagov.html">quagov</a></td>
+<td>Quantile Function of the Govindarajulu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quagpa.html">quagpa</a></td>
+<td>Quantile Function of the Generalized Pareto Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quagum.html">quagum</a></td>
+<td>Quantile Function of the Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quakap.html">quakap</a></td>
+<td>Quantile Function of the Kappa Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quakmu.html">quakmu</a></td>
+<td>Quantile Function of the Kappa-Mu Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quakur.html">quakur</a></td>
+<td>Quantile Function of the Kumaraswamy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="qualap.html">qualap</a></td>
+<td>Quantile Function of the Laplace Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="qualmrq.html">qualmrq</a></td>
+<td>Quantile Function of the Linear Mean Residual Quantile Function Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="qualn3.html">qualn3</a></td>
+<td>Quantile Function of the 3-Parameter Log-Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quanor.html">quanor</a></td>
+<td>Quantile Function of the Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quape3.html">quape3</a></td>
+<td>Quantile Function of the Pearson Type III Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quaray.html">quaray</a></td>
+<td>Quantile Function of the Rayleigh Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quarevgum.html">quarevgum</a></td>
+<td>Quantile Function of the Reverse Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quarice.html">quarice</a></td>
+<td>Quantile Function of the Rice Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quasla.html">quasla</a></td>
+<td>Quantile Function of the Slash Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quast3.html">quast3</a></td>
+<td>Quantile Function of the 3-Parameter Student t Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quatexp.html">quatexp</a></td>
+<td>Quantile Function of the Truncated Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quatri.html">quatri</a></td>
+<td>Quantile Function of the Asymmetric Triangular Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quawak.html">quawak</a></td>
+<td>Quantile Function of the Wakeby Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="quawei.html">quawei</a></td>
+<td>Quantile Function of the Weibull Distribution</td></tr>
+</table>
+
+<h2><a name="R">-- R --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="ralmomco.html">ralmomco</a></td>
+<td>Alpha-Percentile Residual Quantile Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="reslife.lmoms.html">reslife.lmoms</a></td>
+<td>L-moments of Residual Life</td></tr>
+<tr><td style="width: 25%;"><a href="riglmomco.html">riglmomco</a></td>
+<td>Income Gap Ratio Quantile Function for the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="rlmomco.html">rlmomco</a></td>
+<td>Random Variates of a Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="rmlmomco.html">rmlmomco</a></td>
+<td>Mean Residual Quantile Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="rmvarlmomco.html">rmvarlmomco</a></td>
+<td>Variance Residual Quantile Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="rralmomco.html">rralmomco</a></td>
+<td>Reversed Alpha-Percentile Residual Quantile Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="rreslife.lmoms.html">rreslife.lmoms</a></td>
+<td>L-moments of Reversed Residual Life</td></tr>
+<tr><td style="width: 25%;"><a href="rrmlmomco.html">rrmlmomco</a></td>
+<td>Reversed Mean Residual Quantile Function of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="rrmvarlmomco.html">rrmvarlmomco</a></td>
+<td>Reversed Variance Residual Quantile Function of the Distributions</td></tr>
+</table>
+
+<h2><a name="S">-- S --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="sen.mean.html">sen.mean</a></td>
+<td>Sen's Weighted Mean Statistic</td></tr>
+<tr><td style="width: 25%;"><a href="sentiv.curve.html">sentiv.curve</a></td>
+<td>Compute the Sensitivity Curve for a Single Quantile</td></tr>
+<tr><td style="width: 25%;"><a href="slmomco.html">slmomco</a></td>
+<td>Reversed Cumulative Distribution Function (Survival Function) of the Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="stttlmomco.html">stttlmomco</a></td>
+<td>Scaled Total Time on Test Transform of Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="supdist.html">supdist</a></td>
+<td>The Support of a Distribution based on the Parameters</td></tr>
+</table>
+
+<h2><a name="T">-- T --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="T2prob.html">T2prob</a></td>
+<td>Convert a Vector of T-year Return Periods to Annual Nonexceedance Probabilities</td></tr>
+<tr><td style="width: 25%;"><a href="tau34sq.normtest.html">tau34sq.normtest</a></td>
+<td>The Tau34-squared Test: A Normality Test based on L-skew and L-kurtosis and an Elliptical Rejection Region on an L-moment Ratio Diagram</td></tr>
+<tr><td style="width: 25%;"><a href="theoLmoms.html">theoLmoms</a></td>
+<td>The Theoretical L-moments and L-moment Ratios using Integration of the Quantile Function</td></tr>
+<tr><td style="width: 25%;"><a href="theoLmoms.max.ostat.html">theoLmoms.max.ostat</a></td>
+<td>Compute the Theoretical L-moments of a Distribution Distribution based on System of Maximum Order Statistic Expectations</td></tr>
+<tr><td style="width: 25%;"><a href="theoLmoms.max.ostat.html">theoLmoms.min.ostat</a></td>
+<td>Compute the Theoretical L-moments of a Distribution Distribution based on System of Maximum Order Statistic Expectations</td></tr>
+<tr><td style="width: 25%;"><a href="theopwms.html">theopwms</a></td>
+<td>The Theoretical Probability-Weighted Moments using Integration of the Quantile Function</td></tr>
+<tr><td style="width: 25%;"><a href="theoTLmoms.html">theoTLmoms</a></td>
+<td>The Theoretical Trimmed L-moments and TL-moment Ratios using Integration of the Quantile Function</td></tr>
+<tr><td style="width: 25%;"><a href="TLmom.html">TLmom</a></td>
+<td>A Sample Trimmed L-moment</td></tr>
+<tr><td style="width: 25%;"><a href="TLmoms.html">TLmoms</a></td>
+<td>The Sample Trimmed L-moments and L-moment Ratios</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrcau.html">tlmrcau</a></td>
+<td>Compute Select TL-moment ratios of the Cauchy Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrexp.html">tlmrexp</a></td>
+<td>Compute Select TL-moment ratios of the Exponential Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrgev.html">tlmrgev</a></td>
+<td>Compute Select TL-moment ratios of the Generalized Extreme Value Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrglo.html">tlmrglo</a></td>
+<td>Compute Select TL-moment ratios of the Generalized Logistic Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrgno.html">tlmrgno</a></td>
+<td>Compute Select TL-moment ratios of the Generalized Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrgpa.html">tlmrgpa</a></td>
+<td>Compute Select TL-moment ratios of the Generalized Pareto</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrgum.html">tlmrgum</a></td>
+<td>Compute Select TL-moment ratios of the Gumbel Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrln3.html">tlmrln3</a></td>
+<td>Compute Select TL-moment ratios of the 3-Parameter Log-Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrnor.html">tlmrnor</a></td>
+<td>Compute Select TL-moment ratios of the Normal Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrpe3.html">tlmrpe3</a></td>
+<td>Compute Select TL-moment ratios of the Pearson Type III</td></tr>
+<tr><td style="width: 25%;"><a href="tlmrray.html">tlmrray</a></td>
+<td>Compute Select TL-moment ratios of the Rayleigh Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="tttlmomco.html">tttlmomco</a></td>
+<td>Total Time on Test Transform of Distributions</td></tr>
+<tr><td style="width: 25%;"><a href="tulia6Eprecip.html">tulia6Eprecip</a></td>
+<td>Annual Maximum Precipitation Data for Tulia 6E, Texas</td></tr>
+<tr><td style="width: 25%;"><a href="tuliaprecip.html">tuliaprecip</a></td>
+<td>Annual Maximum Precipitation Data for Tulia, Texas</td></tr>
+<tr><td style="width: 25%;"><a href="TX38lgtrmFlow.html">TX38lgtrmFlow</a></td>
+<td>First six L-moments of logarithms of annual mean streamflow and variances for 35 selected long-term U.S. Geological Survey streamflow-gaging stations in Texas</td></tr>
+</table>
+
+<h2><a name="U">-- U --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="USGSsta01515000peaks.html">USGSsta01515000peaks</a></td>
+<td>Annual Peak Streamflow Data for U.S. Geological Survey Streamflow-Gaging Station 01515000</td></tr>
+<tr><td style="width: 25%;"><a href="USGSsta02366500peaks.html">USGSsta02366500peaks</a></td>
+<td>Annual Peak Streamflow Data for U.S. Geological Survey Streamflow-Gaging Station 02366500</td></tr>
+<tr><td style="width: 25%;"><a href="USGSsta05405000peaks.html">USGSsta05405000peaks</a></td>
+<td>Annual Peak Streamflow Data for U.S. Geological Survey Streamflow-Gaging Station 05405000</td></tr>
+<tr><td style="width: 25%;"><a href="USGSsta06766000dvs.html">USGSsta06766000dvs</a></td>
+<td>Daily Mean Streamflow Data for U.S. Geological Survey Streamflow-Gaging Station 06766000</td></tr>
+<tr><td style="width: 25%;"><a href="USGSsta08151500peaks.html">USGSsta08151500peaks</a></td>
+<td>Annual Peak Streamflow Data for U.S. Geological Survey Streamflow-Gaging Station 08151500</td></tr>
+<tr><td style="width: 25%;"><a href="USGSsta08167000peaks.html">USGSsta08167000peaks</a></td>
+<td>Annual Peak Streamflow Data for U.S. Geological Survey Streamflow-Gaging Station 08167000</td></tr>
+<tr><td style="width: 25%;"><a href="USGSsta08190000peaks.html">USGSsta08190000peaks</a></td>
+<td>Annual Peak Streamflow Data for U.S. Geological Survey Streamflow-Gaging Station 08190000</td></tr>
+<tr><td style="width: 25%;"><a href="USGSsta09442000peaks.html">USGSsta09442000peaks</a></td>
+<td>Annual Peak Streamflow Data for U.S. Geological Survey Streamflow-Gaging Station 09442000</td></tr>
+<tr><td style="width: 25%;"><a href="USGSsta14321000peaks.html">USGSsta14321000peaks</a></td>
+<td>Annual Peak Streamflow Data for U.S. Geological Survey Streamflow-Gaging Station 14321000</td></tr>
+</table>
+
+<h2><a name="V">-- V --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="vec2lmom.html">vec2lmom</a></td>
+<td>Convert a Vector of L-moments to a L-moment Object</td></tr>
+<tr><td style="width: 25%;"><a href="vec2par.html">vec2par</a></td>
+<td>Convert a Vector of Parameters to a Parameter Object of a Distribution</td></tr>
+<tr><td style="width: 25%;"><a href="vec2pwm.html">vec2pwm</a></td>
+<td>Convert a Vector of Probability-Weighted Moments to a Probability-Weighted Moments Object</td></tr>
+<tr><td style="width: 25%;"><a href="vec2TLmom.html">vec2TLmom</a></td>
+<td>Convert a Vector of TL-moments to a TL-moment Object</td></tr>
+<tr><td style="width: 25%;"><a href="vegaprecip.html">vegaprecip</a></td>
+<td>Annual Maximum Precipitation Data for Vega, Texas</td></tr>
+</table>
+
+<h2><a name="X">-- X --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="x2pars.html">x2pars</a></td>
+<td>Estimate an Ensemble of Parameters from Three Different Methods</td></tr>
+<tr><td style="width: 25%;"><a href="x2xlo.html">x2xlo</a></td>
+<td>Conversion of a Vector through a Left-Hand Threshold to Setup Conditional Probability Computations</td></tr>
+</table>
+
+<h2><a name="Z">-- Z --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="z.par2cdf.html">z.par2cdf</a></td>
+<td>Blipping Cumulative Distribution Functions</td></tr>
+<tr><td style="width: 25%;"><a href="z.par2qua.html">z.par2qua</a></td>
+<td>Blipping Quantile Functions</td></tr>
+</table>
+</body></html>

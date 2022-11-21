@@ -1,0 +1,39 @@
+ET                      ET Formulations
+ET.Abtew                Abtew Formulation
+ET.BlaneyCriddle        Blaney-Criddle Formulation
+ET.BrutsaertStrickler   Brutsaert-Strickler Formulation
+ET.ChapmanAustralian    Chapman Formulation
+ET.GrangerGray          Granger-Gray Formulation
+ET.Hamon                Hamon Formulation
+ET.HargreavesSamani     Hargreaves-Samani Formulation
+ET.JensenHaise          Jensen-Haise Formulation
+ET.Linacre              Linacre Formulation
+ET.Makkink              Makkink Formulation
+ET.MattShuttleworth     Matt-Shuttleworth Formulation
+ET.McGuinnessBordne     McGuinness-Bordne Formulation
+ET.MortonCRAE           Morton CRAE Formulation
+ET.MortonCRWE           Morton CRWE Formulation
+ET.PenPan               PenPan Formulation
+ET.Penman               Penman Formulation
+ET.PenmanMonteith       Penman-Monteith Formulation
+ET.PriestleyTaylor      Priestley-Taylor Formulation
+ET.Romanenko            Romanenko Formulation
+ET.SzilagyiJozsa        Szilagyi-Jozsa Formulation
+ET.Turc                 Turc Formulation
+ETComparison            Compare esimtated evapotranspiration among
+                        multiple sets of result
+ETForcings              Plot esimtated evapotranspiration with climate
+                        variables
+ETPlot                  Plot the daily, monthly and annual aggregations
+                        of esimtated evapotranspiration
+E_OBS                   Observed Class-A Pan Evaporation
+ReadInputs              ReadInputs raw date and climate data
+ReadOBSEvaporation      Read Raw Data of Observed Evaporation from file
+climatedata             Raw Climate Data Required for Calculating
+                        Evapotranspiration
+constants               Constants Required for Calculating
+                        Evapotranspriation
+data                    Processed Climate Data Required for Calculating
+                        Evapotranspiration
+defaultconstants        Universal constants Required for Calculating
+                        Evapotranspriation

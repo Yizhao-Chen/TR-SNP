@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: computeRingCellNb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for computeRingCellNb {CAVIAR}"><tr><td>computeRingCellNb {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>computeRingCellNb</h2>
+
+<h3>Description</h3>
+
+<p>Computes characteristic ring cell numbers.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ computeRingCellNb(data, stat = "median")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data frame composed of 13 columns containing the descriptive variables (Site, Year,
+Species, Tree, Sample, and DY; as well as the quantitative variables (CZ, EZ, WZ, MZ).
+Typically, this data frame is the output of the <code><a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a></code> or
+<code><a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a></code> functions,
+alternativelly it can also work on raw data (see <code><a href="GRA_2017-01-10.html">GRA</a></code>).</p>
+</td></tr>
+<tr valign="top"><td><code>stat</code></td>
+<td>
+<p>an optional string of characters indicating if the function must compute the mean
+or the median (default) as summary statistics.</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function computes characteristic tree ring cell numbers (median or mean depending on the option
+selected) as well as their associated measure of variation: mean absolute deviation, mean absolute error,
+and corrected mean absolute error for comparison with standard error (MAD, MAE, MAE.cor),
+or standard deviation and error (SD and SE)) for each tree of the data set. <br />
+The characteristic tree ring cell numbers are: the final ring cell number (RCN), the initial number of
+dormant cambial cells (ICN) and the final number of dormant cambial cells (FCN). <br />
+This function computes also the signal to noise ratio (SNR) for RCN.
+</p>
+
+
+<h3>Value</h3>
+
+<p>A data frame composed of 19 columns containing the computed characteristic tree ring cell numbers (RCN,
+ICN and FCN) mean or median (e.g. RCN.median or RCN.mean), <br />
+along with their associated measures of variations (e.g. RCN.MAD, RCN.MAE, RCN.MAE.cor or RCN.SD,
+RCN.SE), and number of observations (e.g. RCN.CNT), and signal-to-noise ratio (RCN.SNR). <br />
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 3.1-2. <br />
+Development started: 25 March 2010. <br />
+Last modifications: 06 October 2016.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, UMR1092 - INRA Nancy (France) <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K., Longuetaud F., Mothe F., Cuny H. &amp; Le Moguedec G. 2011.
+Phenology of wood formation: Data processing, analysis and visualisation using R (Package CAVIAR).
+<em>Dendrochronologia</em> <b>29</b>: 139-149. <br />
+</p>
+<p>Rathgeber C.B.K., Rossi S.&amp; Bontemps J.-D. 2011.
+Cambial activity related to tree size in a mature silver-fir plantation.
+<em>Annals of Botany</em> <b>108</b>: 429-438.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ ## Loading the training dataset
+ ## ============================
+ data(GRA)
+
+ ## Aggregating and standardising raw data
+ ## ======================================
+ ## Computing the median for Grandfontaine raw data
+ GRA.med &lt;- aggregateRadialFiles(data=GRA)
+
+ ## Standising data aggregated using median
+ GRA.med.sta &lt;- standardiseCellCounts(GRA.med)
+
+ ## Computing the mean for Grandfontaine raw data:
+ GRA.mean &lt;- aggregateRadialFiles(data=GRA, stat="mean")
+
+ ## Standising data aggregated using mean
+ GRA.mean.sta &lt;- standardiseCellCounts(GRA.mean)
+
+ ## Computing final total ring cell number using medians
+ ## ====================================================
+ ## On raw data using the median (default)
+ GRA_RCN.med &lt;- computeRingCellNb(GRA)
+
+ ## On data aggregated using median
+ GRA.med_RCN.med &lt;- computeRingCellNb(GRA.med)
+
+ ## On standardised data, initially aggregated using median
+ GRA.med.sta_RCN.med &lt;- computeRingCellNb(GRA.med.sta)
+
+ ## Creating a csv file containing output data
+ write.csv2(GRA.med.sta_RCN.med, file = paste("Median RCN for GRA.med.sta ", Sys.Date(), ".csv", sep=""),
+            row.names = FALSE)
+
+ ## Evaluating the standardisation process using means
+ ## =====================================================
+ ## On raw data using the mean
+ GRA_RCN.mean &lt;- computeRingCellNb(GRA, stat="mean")
+
+ ## On data aggregated using mean
+ GRA.mean_RCN.mean &lt;- computeRingCellNb(GRA.mean, stat="mean")
+
+ ## On standardised data, initially aggregated using mean
+ GRA.mean.sta_RCN.mean &lt;- computeRingCellNb(GRA.mean.sta)
+
+ ## Placing all the SNR computed at different step of the process in the same data frame
+ SNR &lt;- data.frame(Site=GRA_RCN.mean$Site, Year=GRA_RCN.mean$Year, Tree=GRA_RCN.mean$Tree, Species=GRA_RCN.mean$Species,
+                   Raw=GRA_RCN.mean$RCN.SNR, Mean=GRA.mean_RCN.mean$RCN.SNR, Sta=GRA.mean.sta_RCN.mean$RCN.SNR)
+
+ ## Checking if standardisation is improving the quality of the data tree by tree
+ SNR$Dif &lt;- SNR$Sta - SNR$Mean
+ SNR$Pos &lt;- ifelse(SNR$Dif &gt; 0, 1, 0)
+ SNR$Neg &lt;- ifelse(SNR$Dif &lt; 0, 1, 0)
+ SNR$Best &lt;- SNR$Sta * SNR$Pos + SNR$Mean * SNR$Neg
+
+ ## Overall synthesis
+ Summary &lt;- apply(SNR[5:11], 2, sum, na.rm=TRUE)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

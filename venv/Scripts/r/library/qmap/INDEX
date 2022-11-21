@@ -1,0 +1,26 @@
+bernexp                 The Bernoulli-Exponential distribution
+berngamma               The Bernoulli-Gamma distribution
+bernlnorm               The Bernoulli-Log-Normal distribution
+bernweibull             The Bernoulli-Weibull distribution
+fitQmap                 Quantile mapping
+fitQmapDIST             Quantile mapping using distribution derived
+                        transformations
+fitQmapPTF              Quantile mapping using parametric
+                        transformations
+fitQmapQUANT            Non-parametric quantile mapping using empirical
+                        quantiles.
+fitQmapRQUANT           Non-parametric quantile mapping using robust
+                        empirical quantiles.
+fitQmapSSPLIN           Quantile mapping using a smoothing spline
+obsprecip               Daily precipitation data at three locations in
+                        Norway.
+qmap-package            Statistical Transformations for Post-Processing
+                        Climate Model Output
+startbernexp            Rough parameter estimate for the
+                        Bernoulli-Exponential distribution
+startberngamma          Rough parameter estimate for the
+                        Bernoulli-Gamma distribution
+startbernlnorm          Rough parameter estimate for the
+                        Bernoulli-Log-Normal distribution
+startbernweibull        Rough parameter estimate for the
+                        Bernoulli-Weibull distribution

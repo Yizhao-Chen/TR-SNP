@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: aggregateRadialFiles</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for aggregateRadialFiles {CAVIAR}"><tr><td>aggregateRadialFiles {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>aggregateRadialFiles</h2>
+
+<h3>Description</h3>
+
+<p>Aggregates raw radial files data to compute median or mean cell numbers per tree.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ aggregateRadialFiles(data, stat = "median")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data.frame containing cell count data. This data frame must contain 12 imposed variables
+with compulsory column names: Site, Year, Tree, Species, Sample, DY, RF, CZ, EZ, WZ, MZ, 
+and PR (see <code><a href="GRA_2017-01-10.html">GRA</a></code>).
+</p>
+</td></tr>
+<tr valign="top"><td><code>stat</code></td>
+<td>
+<p>an optional character string indicating if RF file should be aggregated using
+&quot;median&quot; (default) or &quot;mean&quot;.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function takes the raw cell count data (CZ, EZ, WZ, MZ, and PR) recorded by radial file
+and aggregate (using median or mean) them tree by tree / year. <br />
+Additionally, it computes the sums of mature and thickening cells (WMZ = WZ + MZ); and mature, thickening,
+and enlarging cells (EWMZ = EZ + WZ + MZ). <br />
+</p>
+
+
+<h3>Value</h3>
+
+<p>A data frame of at 13 columns containing:
+the unchanged group variables: Site, Year, Species, Tree, Sample, and DY; <br />
+and the aggregated values for variables: CZ, EZ, WZ, MZ, and PR; <br />
+along with the cumulative sums WMZ and EWMZ. <br />
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 3.1-2. <br />
+Development started: 27 November 2008. <br />
+Last modifications: 29 September 2016.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, UMR1092 - INRA Nancy (France) <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K., Longuetaud F., Mothe F., Cuny H. &amp; Le Moguedec G. 2011.
+Phenology of wood formation: Data processing, analysis and visualisation using R (Package CAVIAR).
+<em>Dendrochronologia</em> <b>29</b>: 139-149. <br />
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ ## Loading the training dataset:
+ data(GRA)
+
+ ## Computing the median for Grandfontaine raw data:
+ GRA.median &lt;- aggregateRadialFiles(data=GRA, stat="median")
+
+ ## Computing the mean for Grandfontaine raw data:
+ GRA.mean &lt;- aggregateRadialFiles(data=GRA, stat="mean")
+ 
+ ## Creating a csv file containing the aggregated dataset
+ write.csv2(GRA.median, file = paste("GRA median - ", Sys.Date(), ".csv", sep=""), row.names = FALSE)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

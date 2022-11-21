@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: overviewCellCountTable</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for overviewCellCountTable {CAVIAR}"><tr><td>overviewCellCountTable {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>overviewCellCountTable</h2>
+
+<h3>Description</h3>
+
+<p>Check the format and provides a short summary of cell count data frame
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+   overviewCellCountTable(data)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data.frame containing cell count data. <br />
+This data.frame must contain 12 columns
+with the qualitative variables: Site, Year, Species, Tree, Sample, DY, RF,
+and the quantitive variables CZ, EZ, WZ, MZ, and PR. (see <code><a href="GRA_2017-01-10.html">GRA</a></code>).
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function is designed to allow a first basic general cheking of cell count data,
+and print a short summary of factors and quantitative variables contained in the data frame.
+</p>
+
+
+<h3>Value</h3>
+
+<p>None <br />
+Information gathered by this function are directly printed in the console.
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 1.1-1. <br />
+Development started: 22 January 2016. <br />
+Last modifications: 10 January 2017.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, INRA, AgroParisTech, F-54000, Nancy, France <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+   ## Loading the GRA dataset:
+   data(GRA)
+   
+   ## Overview of GRA dataset
+   ## -----------------------
+   overviewCellCountTable(GRA)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

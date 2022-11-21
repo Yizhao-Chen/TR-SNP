@@ -1,0 +1,22 @@
+AciC4                   C4 Photosynthesis
+FARAO                   FARquhar And Opti
+Photosyn                Coupled leaf gas exchange model
+PhotosynEB              Coupled leaf gas exchange model with energy
+                        balance
+PhotosynTuzet           Coupled leaf gas exchange model with Tuzet
+                        stomatal conductance
+RHtoVPD                 Conversions between relative humidity, vapour
+                        pressure deficit and dewpoint
+acidata1                An example A-Ci curve
+findCiTransition        Calculate transition points for fitted A-Ci
+                        curves
+fitBB                   Fit Ball-Berry type models of stomatal
+                        conductance
+fitBBs                  Fit Ball-Berry type models of stomatal
+                        conductance to many groups at once
+fitaci                  Fit the Farquhar-Berry-von Caemmerer model of
+                        leaf photosynthesis
+fitacis                 Fit multiple A-Ci curves at once
+manyacidat              An example dataset with multiple A-Ci curves
+plantecophys-package    Modelling and Analysis of Leaf Gas Exchange
+                        Data

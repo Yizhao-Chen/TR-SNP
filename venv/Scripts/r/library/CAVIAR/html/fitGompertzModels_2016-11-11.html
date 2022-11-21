@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: fitGompertzModels</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for fitGompertzModels {CAVIAR}"><tr><td>fitGompertzModels {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>fitGompertzModels</h2>
+
+<h3>Description</h3>
+
+<p>fits Gompertz models to the observations.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ fitGompertzModels(data, parameters = NULL, predictions = FALSE, plot.fitting = FALSE, plot.obs.vs.pre = FALSE)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data frame containing cell count data.
+This data frame must contain at least 4 columns for grouping variables with compulsory names
+(Site, Year, Tree, and Species), <br />
+and at least two columns, but potentially four, with compulsory names for date (DY), and cell count data (EWMZ, WMZ and MZ).</p>
+</td></tr>
+<tr valign="top"><td><code>parameters</code></td>
+<td>
+<p>an optional data frame containing the grouping variable (Site, Year, Tree, and Species)
+and the value of the asymptotes (A - the same value will be applied for EWMZ, WMZ and MZ); <br />
+or the values of all the Gompertz parameters (a, b, k).</p>
+</td></tr>
+<tr valign="top"><td><code>predictions</code></td>
+<td>
+<p>an optional bolean indicating if predicted values must be returned or not (default).</p>
+</td></tr>
+<tr valign="top"><td><code>plot.fitting</code></td>
+<td>
+<p>an optional bolean indicating if a graph of the fitting must be plotted or not (default).</p>
+</td></tr>
+<tr valign="top"><td><code>plot.obs.vs.pre</code></td>
+<td>
+<p>an optional bolean indicating if a verification graph must be plotted or not (default).</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function fits a Gompertz model to the observations and outputs the three fitted parameters,
+along with six biologically meaningful parameters, and three estimators of the goodness-of-fit. <br />
+The function can also outputs the predicted values. <br />
+And additionally it draws fitting and verification plots if required. <br />
+The Gompertz model is written:
+</p>
+<p style="text-align: center;"><i>N(t) = A e^{-e^{&beta; - &kappa; t}}</i></p>
+
+<p>with N(t) the cumulative number of cells and t the day of year.  <br />
+</p>
+
+
+<h3>Value</h3>
+
+<p>By default a data frame containing the three fitted parameters, the six biologically meaningful parameters,
+and the three estimators of the goodness-of-fit :<br />
+</p>
+<table summary="R valueblock">
+<tr valign="top"><td><code>a</code></td>
+<td>
+<p>parameter A of the model;</p>
+</td></tr>
+<tr valign="top"><td><code>b</code></td>
+<td>
+<p>parameter <i>&beta;</i> of the model;</p>
+</td></tr>
+<tr valign="top"><td><code>k</code></td>
+<td>
+<p>parameter <i>&kappa;</i> of the model;</p>
+</td></tr>
+<tr valign="top"><td><code>bG</code></td>
+<td>
+<p>date at which 5 % of the cells are produced;</p>
+</td></tr>
+<tr valign="top"><td><code>cG</code></td>
+<td>
+<p>date at which 95 % of the cells are produced;</p>
+</td></tr>
+<tr valign="top"><td><code>dG</code></td>
+<td>
+<p>time elapsed between bG and cG;</p>
+</td></tr>
+<tr valign="top"><td><code>tGx</code></td>
+<td>
+<p>date at which the cell production is maximal (Gompertz curve inflection point);</p>
+</td></tr>
+<tr valign="top"><td><code>rGx</code></td>
+<td>
+<p>maximal rate of cell production;</p>
+</td></tr>
+<tr valign="top"><td><code>rGa</code></td>
+<td>
+<p>average rate of cell production (computed between bG and cG);</p>
+</td></tr>
+<tr valign="top"><td><code>R2</code></td>
+<td>
+<p>R-square;</p>
+</td></tr>
+<tr valign="top"><td><code>EF</code></td>
+<td>
+<p>Modelling Efficiency;</p>
+</td></tr>
+<tr valign="top"><td><code>RMSD</code></td>
+<td>
+<p>Root Mean Squared Deviation.</p>
+</td></tr>
+</table>
+<p>If option predictions = TRUE, a list of three data frames containing the references of the group (references),<br />
+the fitting coefficients (coefficients), and the values of observations and model predictions (values) is returned.
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 5.2-4. <br />
+Development started: 27 November 2008. <br />
+Last modifications: 11 November 2016.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, UMR1092 - INRA Nancy (France) <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K., Rossi S.&amp; Bontemps J.-D. 2011.
+Cambial activity related to tree size in a mature silver-fir plantation.
+<em>Annals of Botany</em> <b>108</b>: 429-438.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ ## Loading the training dataset
+ data(GRA)
+ 
+ ## Computing the mean for Grandfontaine raw data
+ GRA.mean &lt;- aggregateRadialFiles(data=GRA, stat="mean")
+
+ ## Standardising data aggregated using the mean
+ GRA.sdd &lt;- standardiseCellCounts(GRA.mean)
+
+ ## Computing the final total ring cell number to constrain the asymptote of the Gompertz
+ GRA.sdd_RCN &lt;- computeRingCellNb(GRA.sdd)[, c("Site", "Year", "Tree", "Species", "RCN.Median")]
+ names(GRA.sdd_RCN) &lt;- c("Site", "Year", "Tree", "Species", "A")
+ 
+ ## Fitting Gompertz models on standardised data using fixed assymptotes, and printing verification plots in a pdf
+ Plot.file.name &lt;- paste("Verification plots for the fitting of Gompertz functions - ",
+                         Sys.Date(), ".pdf", sep="")
+ pdf(file = Plot.file.name)
+ GRA.sdd_GZP.fix &lt;- fitGompertzModels(GRA.sdd, parameters=GRA.sdd_RCN, predictions=FALSE,
+                                      plot.fitting=TRUE, plot.obs.vs.pre=TRUE)
+ dev.off()
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: C4 Photosynthesis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for AciC4 {plantecophys}"><tr><td>AciC4 {plantecophys}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>C4 Photosynthesis</h2>
+
+<h3>Description</h3>
+
+<p>An implementation of the A-Ci curve for C4 plants, based on von Caemmerer et al. (2000)
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+AciC4(Ci, PPFD = 1500, Tleaf = 25, VPMAX25 = 120, JMAX25 = 400,
+  Vcmax = 60, Vpr = 80, alpha = 0, gbs = 0.003, O2 = 210,
+  x = 0.4, THETA = 0.7, Q10 = 2.3, RD0 = 1, RTEMP = 25,
+  TBELOW = 0, DAYRESP = 1, Q10F = 2, FRM = 0.5, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>Ci</code></td>
+<td>
+<p>Intercellular CO2 concentration (ppm)</p>
+</td></tr>
+<tr valign="top"><td><code>PPFD</code></td>
+<td>
+<p>Photosynthetic photon flux density (mu mol m-2 s-1)</p>
+</td></tr>
+<tr valign="top"><td><code>Tleaf</code></td>
+<td>
+<p>Leaf temperature (C)</p>
+</td></tr>
+<tr valign="top"><td><code>VPMAX25</code></td>
+<td>
+<p>The maximum rate of PEP carboxylation (mu mol m-2 s-1)</p>
+</td></tr>
+<tr valign="top"><td><code>JMAX25</code></td>
+<td>
+<p>Maximum electron transport rate (at 25C)</p>
+</td></tr>
+<tr valign="top"><td><code>Vcmax</code></td>
+<td>
+<p>Maximum rate of carboxylation (mu mol m-2 s-1) (at 25C)</p>
+</td></tr>
+<tr valign="top"><td><code>Vpr</code></td>
+<td>
+<p>PEP regeneration (mu mol m-2 s-1)</p>
+</td></tr>
+<tr valign="top"><td><code>alpha</code></td>
+<td>
+<p>Fraction of PSII activity in the bundle sheath (-)</p>
+</td></tr>
+<tr valign="top"><td><code>gbs</code></td>
+<td>
+<p>Bundle sheath conductance (mol m-2 s-1)</p>
+</td></tr>
+<tr valign="top"><td><code>O2</code></td>
+<td>
+<p>Mesophyll O2 concentration</p>
+</td></tr>
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>Partitioning factor for electron transport</p>
+</td></tr>
+<tr valign="top"><td><code>THETA</code></td>
+<td>
+<p>Shape parameter of the non-rectangular hyperbola</p>
+</td></tr>
+<tr valign="top"><td><code>Q10</code></td>
+<td>
+<p>T-dependence parameter for Michaelis-Menten coefficients.</p>
+</td></tr>
+<tr valign="top"><td><code>RD0</code></td>
+<td>
+<p>Respiration at base temperature (RTEMP) (mu mol m-2 s-1)</p>
+</td></tr>
+<tr valign="top"><td><code>RTEMP</code></td>
+<td>
+<p>Base leaf temperature for respiration (C)</p>
+</td></tr>
+<tr valign="top"><td><code>TBELOW</code></td>
+<td>
+<p>Below this T, respiration is zero.</p>
+</td></tr>
+<tr valign="top"><td><code>DAYRESP</code></td>
+<td>
+<p>Fraction respiration in the light vs. that measured in the dark</p>
+</td></tr>
+<tr valign="top"><td><code>Q10F</code></td>
+<td>
+<p>T-dependence parameter of respiration</p>
+</td></tr>
+<tr valign="top"><td><code>FRM</code></td>
+<td>
+<p>Fraction of day respiration that is mesophyll respiration (Rm)</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>Further arguments (currently ignored).</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Note that the temperature response parameters have been hardwired 
+in this function, and are based on von Caemmerer (2000).
+</p>
+<p>Note that it is not (yet) possible to fit this curve to observations of 
+photosynthesis (see <code><a href="fitaci.html">fitaci</a></code> to fit the C3 model of photosynthesis).
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Rhys Whitley
+</p>
+
+
+<h3>References</h3>
+
+<p>Caemmerer, S.V., 2000. Biochemical Models of Leaf Photosynthesis. Csiro Publishing.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# Simulate a C4 A-Ci curve. 
+aci &lt;- AciC4(Ci=seq(5,600, length=101))
+with(aci, plot(Ci, ALEAF, type='l', ylim=c(0,max(ALEAF))))
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>plantecophys</em> version 1.4-4 <a href="00Index.html">Index</a>]</div>
+</body></html>

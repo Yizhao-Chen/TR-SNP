@@ -1,0 +1,704 @@
+Apwm2BpwmRC             Conversion between A- and B-Type
+                        Probability-Weighted Moments for Right-Tail
+                        Censoring of an Appropriate Distribution
+BEhypergeo              Barnes Extended Hypergeometric Function
+Bpwm2ApwmRC             Conversion between B- and A-Type
+                        Probability-Weighted Moments for Right-Tail
+                        Censoring of an Appropriate Distribution
+DrillBitLifetime        Lifetime of Drill Bits
+IRSrefunds.by.state     U.S. Internal Revenue Service Refunds by State
+                        for Fiscal Year 2006
+LaguerreHalf            Laguerre Polynomial (Half)
+Lcomoment.Lk12          Compute a Single Sample L-comoment
+Lcomoment.Wk            Weighting Coefficient for Sample L-comoment
+Lcomoment.coefficients
+                        L-comoment Coefficient Matrix
+Lcomoment.correlation   L-correlation Matrix (L-correlation through
+                        Sample L-comoments)
+Lcomoment.matrix        Compute Sample L-comoment Matrix
+T2prob                  Convert a Vector of T-year Return Periods to
+                        Annual Nonexceedance Probabilities
+TLmom                   A Sample Trimmed L-moment
+TLmoms                  The Sample Trimmed L-moments and L-moment
+                        Ratios
+TX38lgtrmFlow           First six L-moments of logarithms of annual
+                        mean streamflow and variances for 35 selected
+                        long-term U.S. Geological Survey
+                        streamflow-gaging stations in Texas
+USGSsta01515000peaks    Annual Peak Streamflow Data for U.S. Geological
+                        Survey Streamflow-Gaging Station 01515000
+USGSsta02366500peaks    Annual Peak Streamflow Data for U.S. Geological
+                        Survey Streamflow-Gaging Station 02366500
+USGSsta05405000peaks    Annual Peak Streamflow Data for U.S. Geological
+                        Survey Streamflow-Gaging Station 05405000
+USGSsta06766000dvs      Daily Mean Streamflow Data for U.S. Geological
+                        Survey Streamflow-Gaging Station 06766000
+USGSsta08151500peaks    Annual Peak Streamflow Data for U.S. Geological
+                        Survey Streamflow-Gaging Station 08151500
+USGSsta08167000peaks    Annual Peak Streamflow Data for U.S. Geological
+                        Survey Streamflow-Gaging Station 08167000
+USGSsta08190000peaks    Annual Peak Streamflow Data for U.S. Geological
+                        Survey Streamflow-Gaging Station 08190000
+USGSsta09442000peaks    Annual Peak Streamflow Data for U.S. Geological
+                        Survey Streamflow-Gaging Station 09442000
+USGSsta14321000peaks    Annual Peak Streamflow Data for U.S. Geological
+                        Survey Streamflow-Gaging Station 14321000
+add.lmomco.axis         Add an lmomco Axis to a Plot
+add.log.axis            Add a Polished log Axis to a Plot
+amarilloprecip          Annual Maximum Precipitation Data for Amarillo,
+                        Texas
+are.lmom.valid          Are the L-moments valid
+are.par.valid           Are the Distribution Parameters Consistent with
+                        the Distribution
+are.paraep4.valid       Are the Distribution Parameters Consistent with
+                        the 4-Parameter Asymmetric Exponential Power
+                        Distribution
+are.parcau.valid        Are the Distribution Parameters Consistent with
+                        the Cauchy Distribution
+are.paremu.valid        Are the Distribution Parameters Consistent with
+                        the Eta-Mu Distribution
+are.parexp.valid        Are the Distribution Parameters Consistent with
+                        the Exponential Distribution
+are.pargam.valid        Are the Distribution Parameters Consistent with
+                        the Gamma Distribution
+are.pargep.valid        Are the Distribution Parameters Consistent with
+                        the Generalized Exponential Poisson
+                        Distribution
+are.pargev.valid        Are the Distribution Parameters Consistent with
+                        the Generalized Extreme Value Distribution
+are.pargld.valid        Are the Distribution Parameters Consistent with
+                        the Generalized Lambda Distribution
+are.parglo.valid        Are the Distribution Parameters Consistent with
+                        the Generalized Logistic Distribution
+are.pargno.valid        Are the Distribution Parameters Consistent with
+                        the Generalized Normal Distribution
+are.pargov.valid        Are the Distribution Parameters Consistent with
+                        the Govindarajulu Distribution
+are.pargpa.valid        Are the Distribution Parameters Consistent with
+                        the Generalized Pareto Distribution
+are.pargum.valid        Are the Distribution Parameters Consistent with
+                        the Gumbel Distribution
+are.parkap.valid        Are the Distribution Parameters Consistent with
+                        the Kappa Distribution
+are.parkmu.valid        Are the Distribution Parameters Consistent with
+                        the Kappa-Mu Distribution
+are.parkur.valid        Are the Distribution Parameters Consistent with
+                        the Kumaraswamy Distribution
+are.parlap.valid        Are the Distribution Parameters Consistent with
+                        the Laplace Distribution
+are.parlmrq.valid       Are the Distribution Parameters Consistent with
+                        the Linear Mean Residual Quantile Function
+                        Distribution
+are.parln3.valid        Are the Distribution Parameters Consistent with
+                        the 3-Parameter Log-Normal Distribution
+are.parnor.valid        Are the Distribution Parameters Consistent with
+                        the Normal Distribution
+are.parpe3.valid        Are the Distribution Parameters Consistent with
+                        the Pearson Type III Distribution
+are.parray.valid        Are the Distribution Parameters Consistent with
+                        the Rayleigh Distribution
+are.parrevgum.valid     Are the Distribution Parameters Consistent with
+                        the Reverse Gumbel Distribution
+are.parrice.valid       Are the Distribution Parameters Consistent with
+                        the Rice Distribution
+are.parsla.valid        Are the Distribution Parameters Consistent with
+                        the Slash Distribution
+are.parst3.valid        Are the Distribution Parameters Consistent with
+                        the 3-Parameter Student t Distribution
+are.partexp.valid       Are the Distribution Parameters Consistent with
+                        the Truncated Exponential Distribution
+are.partri.valid        Are the Distribution Parameters Consistent with
+                        the Asymmetric Triangular Distribution
+are.parwak.valid        Are the Distribution Parameters Consistent with
+                        the Wakeby Distribution
+are.parwei.valid        Are the Distribution Parameters Consistent with
+                        the Weibull Distribution
+bfrlmomco               Bonferroni Curve of the Distributions
+canyonprecip            Annual Maximum Precipitation Data for Canyon,
+                        Texas
+cdf2lmom                Compute an L-moment from Cumulative
+                        Distribution Function
+cdf2lmoms               Compute L-moments from Cumulative Distribution
+                        Function
+cdfaep4                 Cumulative Distribution Function of the
+                        4-Parameter Asymmetric Exponential Power
+                        Distribution
+cdfcau                  Cumulative Distribution Function of the Cauchy
+                        Distribution
+cdfemu                  Cumulative Distribution Function of the Eta-Mu
+                        Distribution
+cdfexp                  Cumulative Distribution Function of the
+                        Exponential Distribution
+cdfgam                  Cumulative Distribution Function of the Gamma
+                        Distribution
+cdfgep                  Cumulative Distribution Function of the
+                        Generalized Exponential Poisson Distribution
+cdfgev                  Cumulative Distribution Function of the
+                        Generalized Extreme Value Distribution
+cdfgld                  Cumulative Distribution Function of the
+                        Generalized Lambda Distribution
+cdfglo                  Cumulative Distribution Function of the
+                        Generalized Logistic Distribution
+cdfgno                  Cumulative Distribution Function of the
+                        Generalized Normal Distribution
+cdfgov                  Cumulative Distribution Function of the
+                        Govindarajulu Distribution
+cdfgpa                  Cumulative Distribution Function of the
+                        Generalized Pareto Distribution
+cdfgum                  Cumulative Distribution Function of the Gumbel
+                        Distribution
+cdfkap                  Cumulative Distribution Function of the Kappa
+                        Distribution
+cdfkmu                  Cumulative Distribution Function of the
+                        Kappa-Mu Distribution
+cdfkur                  Cumulative Distribution Function of the
+                        Kumaraswamy Distribution
+cdflap                  Cumulative Distribution Function of the Laplace
+                        Distribution
+cdflmrq                 Cumulative Distribution Function of the Linear
+                        Mean Residual Quantile Function Distribution
+cdfln3                  Cumulative Distribution Function of the
+                        3-Parameter Log-Normal Distribution
+cdfnor                  Cumulative Distribution Function of the Normal
+                        Distribution
+cdfpe3                  Cumulative Distribution Function of the Pearson
+                        Type III Distribution
+cdfray                  Cumulative Distribution Function of the
+                        Rayleigh Distribution
+cdfrevgum               Cumulative Distribution Function of the Reverse
+                        Gumbel Distribution
+cdfrice                 Cumulative Distribution Function of the Rice
+                        Distribution
+cdfsla                  Cumulative Distribution Function of the Slash
+                        Distribution
+cdfst3                  Cumulative Distribution Function of the
+                        3-Parameter Student t Distribution
+cdftexp                 Cumulative Distribution Function of the
+                        Truncated Exponential Distribution
+cdftri                  Cumulative Distribution Function of the
+                        Asymmetric Triangular Distribution
+cdfwak                  Cumulative Distribution Function of the Wakeby
+                        Distribution
+cdfwei                  Cumulative Distribution Function of the Weibull
+                        Distribution
+check.fs                Check Vector of Nonexceedance Probabilities
+check.pdf               Check and Potentially Graph Probability Density
+                        Functions
+claudeprecip            Annual Maximum Precipitation Data for Claude,
+                        Texas
+clearforkporosity       Porosity Data
+cmlmomco                Conditional Mean Residual Quantile Function of
+                        the Distributions
+cvm.test.lmomco         Cramér-von Mises Test for Goodness-of-Fit
+dat2bernqua             Observed Data to Empirical Quantiles through
+                        Bernstein or Kantorovich Polynomials
+dat2bernquaf            Equivalent Nonexceedance Probability for a
+                        Given Value through Observed Data to Empirical
+                        Quantiles through Bernstein or Kantorovich
+                        Polynomials
+disfitqua               Fit a Distribution using Minimization of
+                        Available Quantiles
+dist.list               List of Distribution Names
+dlmomco                 Probability Density Function of the
+                        Distributions
+expect.max.ostat        Compute the Expectation of a Maximum (or
+                        Minimum and others) Order Statistic
+f2f                     Subsetting of Nonexceedance Probabilities
+                        Related to Conditional Probability Adjustment
+f2flo                   Conversion of Annual Nonexceedance Probability
+                        to Conditional Probability Nonexceedance
+                        Probabilities
+f2fpds                  Conversion of Annual Nonexceedance Probability
+                        to Partial Duration Nonexceedance Probability
+fliplmoms               Flip L-moments by Flip Attribute in L-moment
+                        Vector
+flo2f                   Conversion of Conditional Nonexceedance
+                        Probability to Annual Nonexceedance Probability
+fpds2f                  Conversion of Partial-Duration Nonexceedance
+                        Probability to Annual Nonexceedance Probability
+freq.curve.all          Compute Frequency Curve for Almost All
+                        Distributions
+gen.freq.curves         Plot Randomly Generated Frequency Curves from a
+                        Parent Distribution
+genci.simple            Generate (Estimate) Confidence Intervals for
+                        Quantiles of a Parent Distribution
+gini.mean.diff          Gini Mean Difference Statistic
+grv2prob                Convert a Vector of Gumbel Reduced Variates to
+                        Annual Nonexceedance Probabilities
+harmonic.mean           The Harmonic Mean with Zero-Value Correction
+headrick.sheng.lalpha   The Sample Headrick and Sheng L-alpha
+herefordprecip          Annual Maximum Precipitation Data for Hereford,
+                        Texas
+hlmomco                 Hazard Functions of the Distributions
+is.aep4                 Is a Distribution Parameter Object Typed as
+                        4-Parameter Asymmetric Exponential Power
+is.cau                  Is a Distribution Parameter Object Typed as
+                        Cauchy
+is.emu                  Is a Distribution Parameter Object Typed as
+                        Eta-Mu
+is.exp                  Is a Distribution Parameter Object Typed as
+                        Exponential
+is.gam                  Is a Distribution Parameter Object Typed as
+                        Gamma
+is.gep                  Is a Distribution Parameter Object Typed as
+                        Generalized Extreme Value
+is.gev                  Is a Distribution Parameter Object Typed as
+                        Generalized Extreme Value
+is.gld                  Is a Distribution Parameter Object Typed as
+                        Generalized Lambda
+is.glo                  Is a Distribution Parameter Object Typed as
+                        Generalized Logistic
+is.gno                  Is a Distribution Parameter Object Typed as
+                        Generalized Normal
+is.gov                  Is a Distribution Parameter Object Typed as
+                        Govindarajulu
+is.gpa                  Is a Distribution Parameter Object Typed as
+                        Generalized Pareto
+is.gum                  Is a Distribution Parameter Object Typed as
+                        Gumbel
+is.kap                  Is a Distribution Parameter Object Typed as
+                        Kappa
+is.kmu                  Is a Distribution Parameter Object Typed as
+                        Kappa-Mu
+is.kur                  Is a Distribution Parameter Object Typed as
+                        Kumaraswamy
+is.lap                  Is a Distribution Parameter Object Typed as
+                        Laplace
+is.lmrq                 Is a Distribution Parameter Object Typed as
+                        Linear Mean Residual Quantile Function
+is.ln3                  Is a Distribution Parameter Object Typed as
+                        3-Parameter Log-Normal
+is.nor                  Is a Distribution Parameter Object Typed as
+                        Normal
+is.pe3                  Is a Distribution Parameter Object Typed as
+                        Pearson Type III
+is.ray                  Is a Distribution Parameter Object Typed as
+                        Rayleigh
+is.revgum               Is a Distribution Parameter Object Typed as
+                        Reverse Gumbel
+is.rice                 Is a Distribution Parameter Object Typed as
+                        Rice
+is.sla                  Is a Distribution Parameter Object Typed as
+                        Slash
+is.st3                  Is a Distribution Parameter Object Typed as
+                        3-Parameter Student t Distribution
+is.texp                 Is a Distribution Parameter Object Typed as
+                        Truncated Exponential
+is.tri                  Is a Distribution Parameter Object Typed as
+                        Asymmetric Triangular
+is.wak                  Is a Distribution Parameter Object Typed as
+                        Wakeby
+is.wei                  Is a Distribution Parameter Object Typed as
+                        Weibull
+lcomoms2                The Sample L-comoments for Two Variables
+lkhlmomco               Leimkuhler Curve of the Distributions
+lmom.ub                 Unbiased Sample L-moments by Direct Sample
+                        Estimators
+lmom2par                Convert L-moments to the Parameters of a
+                        Distribution
+lmom2pwm                L-moments to Probability-Weighted Moments
+lmom2vec                Convert an L-moment object to a Vector of
+                        L-moments
+lmomRCmark              Sample L-moment for Right-Tail Censoring by a
+                        Marking Variable
+lmomTLgld               Trimmed L-moments of the Generalized Lambda
+                        Distribution
+lmomTLgpa               Trimmed L-moments of the Generalized Pareto
+                        Distribution
+lmomaep4                L-moments of the 4-Parameter Asymmetric
+                        Exponential Power Distribution
+lmomcau                 Trimmed L-moments of the Cauchy Distribution
+lmomco-package          L-moments, Censored L-moments, Trimmed
+                        L-moments, L-comoments, and Many Distributions
+lmomcoBook              Show the Errata for Asquith (2011) Book
+lmomcoNews              Show the NEWS file
+lmomemu                 L-moments of the Eta-Mu Distribution
+lmomexp                 L-moments of the Exponential Distribution
+lmomgam                 L-moments of the Gamma Distribution
+lmomgep                 L-moments of the Generalized Exponential
+                        Poisson Distribution
+lmomgev                 L-moments of the Generalized Extreme Value
+                        Distribution
+lmomgld                 L-moments of the Generalized Lambda
+                        Distribution
+lmomglo                 L-moments of the Generalized Logistic
+                        Distribution
+lmomgno                 L-moments of the Generalized Normal
+                        Distribution
+lmomgov                 L-moments of the Govindarajulu Distribution
+lmomgpa                 L-moments of the Generalized Pareto
+                        Distribution
+lmomgpaRC               B-type L-moments of the Generalized Pareto
+                        Distribution with Right-Tail Censoring
+lmomgum                 L-moments of the Gumbel Distribution
+lmomkap                 L-moments of the Kappa Distribution
+lmomkmu                 L-moments of the Kappa-Mu Distribution
+lmomkur                 L-moments of the Kumaraswamy Distribution
+lmomlap                 L-moments of the Laplace Distribution
+lmomlmrq                L-moments of the Linear Mean Residual Quantile
+                        Function Distribution
+lmomln3                 L-moments of the 3-Parameter Log-Normal
+                        Distribution
+lmomnor                 L-moments of the Normal Distribution
+lmompe3                 L-moments of the Pearson Type III Distribution
+lmomray                 L-moments of the Rayleigh Distribution
+lmomrevgum              L-moments of the Reverse Gumbel Distribution
+lmomrice                L-moments of the Rice Distribution
+lmoms                   The Sample L-moments and L-moment Ratios
+lmoms.bernstein         Numerically Integrated L-moments of Smoothed
+                        Quantiles from Bernstein or Kantorovich
+                        Polynomials
+lmoms.bootbarvar        The Exact Bootstrap Mean and Variance of
+                        L-moments
+lmoms.cov               Distribution-Free Variance-Covariance Structure
+                        of Sample L-moments
+lmomsRCmark             Sample L-moments Moments for Right-Tail
+                        Censoring by a Marking Variable
+lmomsla                 Trimmed L-moments of the Slash Distribution
+lmomst3                 L-moments of the 3-Parameter Student t
+                        Distribution
+lmomtexp                L-moments of the Truncated Exponential
+                        Distribution
+lmomtri                 L-moments of the Asymmetric Triangular
+                        Distribution
+lmomwak                 L-moments of the Wakeby Distribution
+lmomwei                 L-moments of the Weibull Distribution
+lmorph                  Morph an L-moment Object
+lmrdia                  L-moment Ratio Diagram Components
+lmrdiscord              Compute Discordance on L-CV, L-skew, and
+                        L-kurtosis
+lrv2prob                Convert a Vector of Logistic Reduced Variates
+                        to Annual Nonexceedance Probabilities
+lrzlmomco               Lorenz Curve of the Distributions
+mle2par                 Use Maximum Likelihood to Estimate Parameters
+                        of a Distribution
+mps2par                 Use Maximum Product of Spacings to Estimate the
+                        Parameters of a Distribution
+nonexceeds              Some Common or Useful Nonexceedance
+                        Probabilities
+par2cdf                 Cumulative Distribution Function of the
+                        Distributions
+par2cdf2                Equivalent Cumulative Distribution Function of
+                        Two Distributions
+par2lmom                Convert the Parameters of a Distribution to the
+                        L-moments
+par2pdf                 Probability Density Function of the
+                        Distributions
+par2qua                 Quantile Function of the Distributions
+par2qua2                Equivalent Quantile Function of Two
+                        Distributions
+par2qua2lo              Equivalent Quantile Function of Two
+                        Distributions Stemming from Left-Hand Threshold
+                        to Setup Conditional Probability Computations
+par2vec                 Convert a Parameter Object to a Vector of
+                        Parameters
+parTLgld                Estimate the Parameters of the Generalized
+                        Lambda Distribution using Trimmed L-moments
+                        (t=1)
+parTLgpa                Estimate the Parameters of the Generalized
+                        Pareto Distribution using Trimmed L-moments
+paraep4                 Estimate the Parameters of the 4-Parameter
+                        Asymmetric Exponential Power Distribution
+parcau                  Estimate the Parameters of the Cauchy
+                        Distribution
+paremu                  Estimate the Parameters of the Eta-Mu
+                        Distribution
+parexp                  Estimate the Parameters of the Exponential
+                        Distribution
+pargam                  Estimate the Parameters of the Gamma
+                        Distribution
+pargep                  Estimate the Parameters of the Generalized
+                        Exponential Poisson Distribution
+pargev                  Estimate the Parameters of the Generalized
+                        Extreme Value Distribution
+pargld                  Estimate the Parameters of the Generalized
+                        Lambda Distribution
+parglo                  Estimate the Parameters of the Generalized
+                        Logistic Distribution
+pargno                  Estimate the Parameters of the Generalized
+                        Normal Distribution
+pargov                  Estimate the Parameters of the Govindarajulu
+                        Distribution
+pargpa                  Estimate the Parameters of the Generalized
+                        Pareto Distribution
+pargpaRC                Estimate the Parameters of the Generalized
+                        Pareto Distribution with Right-Tail Censoring
+pargum                  Estimate the Parameters of the Gumbel
+                        Distribution
+parkap                  Estimate the Parameters of the Kappa
+                        Distribution
+parkmu                  Estimate the Parameters of the Kappa-Mu
+                        Distribution
+parkur                  Estimate the Parameters of the Kumaraswamy
+                        Distribution
+parlap                  Estimate the Parameters of the Laplace
+                        Distribution
+parlmrq                 Estimate the Parameters of the Linear Mean
+                        Residual Quantile Function Distribution
+parln3                  Estimate the Parameters of the 3-Parameter
+                        Log-Normal Distribution
+parnor                  Estimate the Parameters of the Normal
+                        Distribution
+parpe3                  Estimate the Parameters of the Pearson Type III
+                        Distribution
+parray                  Estimate the Parameters of the Rayleigh
+                        Distribution
+parrevgum               Estimate the Parameters of the Reverse Gumbel
+                        Distribution
+parrice                 Estimate the Parameters of the Rice
+                        Distribution
+pars2x                  Estimate Quantiles from an Ensemble of
+                        Parameters
+parsla                  Estimate the Parameters of the Slash
+                        Distribution
+parst3                  Estimate the Parameters of the 3-Parameter
+                        Student t Distribution
+partexp                 Estimate the Parameters of the Truncated
+                        Exponential Distribution
+partri                  Estimate the Parameters of the Asymmetric
+                        Triangular Distribution
+parwak                  Estimate the Parameters of the Wakeby
+                        Distribution
+parwei                  Estimate the Parameters of the Weibull
+                        Distribution
+pdfaep4                 Probability Density Function of the 4-Parameter
+                        Asymmetric Exponential Power Distribution
+pdfcau                  Probability Density Function of the Cauchy
+                        Distribution
+pdfemu                  Probability Density Function of the Eta-Mu
+                        Distribution
+pdfexp                  Probability Density Function of the Exponential
+                        Distribution
+pdfgam                  Probability Density Function of the Gamma
+                        Distribution
+pdfgep                  Probability Density Function of the Generalized
+                        Exponential Poisson Distribution
+pdfgev                  Probability Density Function of the Generalized
+                        Extreme Value Distribution
+pdfgld                  Probability Density Function of the Generalized
+                        Lambda Distribution
+pdfglo                  Probability Density Function of the Generalized
+                        Logistic Distribution
+pdfgno                  Probability Density Function of the Generalized
+                        Normal Distribution
+pdfgov                  Probability Density Function of the
+                        Govindarajulu Distribution
+pdfgpa                  Probability Density Function of the Generalized
+                        Pareto Distribution
+pdfgum                  Probability Density Function of the Gumbel
+                        Distribution
+pdfkap                  Probability Density Function of the Kappa
+                        Distribution
+pdfkmu                  Probability Density Function of the Kappa-Mu
+                        Distribution
+pdfkur                  Probability Density Function of the Kumaraswamy
+                        Distribution
+pdflap                  Probability Density Function of the Laplace
+                        Distribution
+pdflmrq                 Probability Density Function of the Linear Mean
+                        Residual Quantile Function Distribution
+pdfln3                  Probability Density Function of the 3-Parameter
+                        Log-Normal Distribution
+pdfnor                  Probability Density Function of the Normal
+                        Distribution
+pdfpe3                  Probability Density Function of the Pearson
+                        Type III Distribution
+pdfray                  Probability Density Function of the Rayleigh
+                        Distribution
+pdfrevgum               Probability Density Function of the Reverse
+                        Gumbel Distribution
+pdfrice                 Probability Density Function of the Rice
+                        Distribution
+pdfsla                  Probability Density Function of the Slash
+                        Distribution
+pdfst3                  Probability Density Function of the 3-Parameter
+                        Student t Distribution
+pdftexp                 Probability Density Function of the Truncated
+                        Exponential Distribution
+pdftri                  Probability Density Function of the Asymmetric
+                        Triangular Distribution
+pdfwak                  Probability Density Function of the Wakeby
+                        Distribution
+pdfwei                  Probability Density Function of the Weibull
+                        Distribution
+pfactor.bernstein       Estimation of Optimal p-factor of
+                        Distributional Support Estimation for Smoothed
+                        Quantiles from the Bernstein or Kantorovich
+                        Polynomials
+plmomco                 Cumulative Distribution Function of the
+                        Distributions
+plotlmrdia              Plot L-moment Ratio Diagram
+plotradarlmr            Plot L-moment Radar Plot (Chart) Graphic
+pmoms                   The Sample Product Moments: Mean, Standard
+                        Deviation, Skew, and Excess Kurtosis
+pp                      Plotting-Position Formula
+pp.f                    Quantile Function of the Ranks of Plotting
+                        Positions
+pp.median               Quantile Function of the Ranks of Plotting
+                        Positions
+prettydist              A Pretty List of Distribution Names
+prob2T                  Convert a Vector of Annual Nonexceedance
+                        Probabilities to T-year Return Periods
+prob2grv                Convert a Vector of Annual Nonexceedance
+                        Probabilities to Gumbel Reduced Variates
+prob2lrv                Convert a Vector of Annual Nonexceedance
+                        Probabilities to Logistic Reduced Variates
+pwm                     Unbiased Sample Probability-Weighted Moments
+pwm.beta2alpha          Conversion of Beta to Alpha
+                        Probability-Weighted Moments (PWMs) or Alpha to
+                        Beta PWMs
+pwm.gev                 Generalized Extreme Value Plotting-Position
+                        Probability-Weighted Moments
+pwm.pp                  Plotting-Position Sample Probability-Weighted
+                        Moments
+pwm.ub                  Unbiased Sample Probability-Weighted Moments
+pwm2lmom                Probability-Weighted Moments to L-moments
+pwm2vec                 Convert Probability-Weighted Moment object to a
+                        Vector
+pwmLC                   Sample Probability-Weighted Moments for
+                        Left-Tail Censoring
+pwmRC                   Sample Probability-Weighted Moments for
+                        Right-Tail Censoring
+qlmomco                 Quantile Function of the Distributions
+qua.ostat               Compute the Quantiles of the Distribution of an
+                        Order Statistic
+qua2ci.cov              Estimate a Confidence Interval for Quantiles of
+                        a Parent Distribution using Sample
+                        Variance-Covariances of L-moments
+qua2ci.simple           Estimate a Confidence Interval for a Single
+                        Quantile of a Parent Distribution by a Simple
+                        Algorithm
+quaaep4                 Quantile Function of the 4-Parameter Asymmetric
+                        Exponential Power Distribution
+quaaep4kapmix           Quantile Function Mixture Between the
+                        4-Parameter Asymmetric Exponential Power and
+                        Kappa Distributions
+quacau                  Quantile Function of the Cauchy Distribution
+quaemu                  Quantile Function of the Eta-Mu Distribution
+quaexp                  Quantile Function of the Exponential
+                        Distribution
+quagam                  Quantile Function of the Gamma Distribution
+quagep                  Quantile Function of the Generalized
+                        Exponential Poisson Distribution
+quagev                  Quantile Function of the Generalized Extreme
+                        Value Distribution
+quagld                  Quantile Function of the Generalized Lambda
+                        Distribution
+quaglo                  Quantile Function of the Generalized Logistic
+                        Distribution
+quagno                  Quantile Function of the Generalized Normal
+                        Distribution
+quagov                  Quantile Function of the Govindarajulu
+                        Distribution
+quagpa                  Quantile Function of the Generalized Pareto
+                        Distribution
+quagum                  Quantile Function of the Gumbel Distribution
+quakap                  Quantile Function of the Kappa Distribution
+quakmu                  Quantile Function of the Kappa-Mu Distribution
+quakur                  Quantile Function of the Kumaraswamy
+                        Distribution
+qualap                  Quantile Function of the Laplace Distribution
+qualmrq                 Quantile Function of the Linear Mean Residual
+                        Quantile Function Distribution
+qualn3                  Quantile Function of the 3-Parameter Log-Normal
+                        Distribution
+quanor                  Quantile Function of the Normal Distribution
+quape3                  Quantile Function of the Pearson Type III
+                        Distribution
+quaray                  Quantile Function of the Rayleigh Distribution
+quarevgum               Quantile Function of the Reverse Gumbel
+                        Distribution
+quarice                 Quantile Function of the Rice Distribution
+quasla                  Quantile Function of the Slash Distribution
+quast3                  Quantile Function of the 3-Parameter Student t
+                        Distribution
+quatexp                 Quantile Function of the Truncated Exponential
+                        Distribution
+quatri                  Quantile Function of the Asymmetric Triangular
+                        Distribution
+quawak                  Quantile Function of the Wakeby Distribution
+quawei                  Quantile Function of the Weibull Distribution
+ralmomco                Alpha-Percentile Residual Quantile Function of
+                        the Distributions
+reslife.lmoms           L-moments of Residual Life
+riglmomco               Income Gap Ratio Quantile Function for the
+                        Distributions
+rlmomco                 Random Variates of a Distribution
+rmlmomco                Mean Residual Quantile Function of the
+                        Distributions
+rmvarlmomco             Variance Residual Quantile Function of the
+                        Distributions
+rralmomco               Reversed Alpha-Percentile Residual Quantile
+                        Function of the Distributions
+rreslife.lmoms          L-moments of Reversed Residual Life
+rrmlmomco               Reversed Mean Residual Quantile Function of the
+                        Distributions
+rrmvarlmomco            Reversed Variance Residual Quantile Function of
+                        the Distributions
+sen.mean                Sen's Weighted Mean Statistic
+sentiv.curve            Compute the Sensitivity Curve for a Single
+                        Quantile
+slmomco                 Reversed Cumulative Distribution Function
+                        (Survival Function) of the Distributions
+stttlmomco              Scaled Total Time on Test Transform of
+                        Distributions
+supdist                 The Support of a Distribution based on the
+                        Parameters
+tau34sq.normtest        The Tau34-squared Test: A Normality Test based
+                        on L-skew and L-kurtosis and an Elliptical
+                        Rejection Region on an L-moment Ratio Diagram
+theoLmoms               The Theoretical L-moments and L-moment Ratios
+                        using Integration of the Quantile Function
+theoLmoms.max.ostat     Compute the Theoretical L-moments of a
+                        Distribution Distribution based on System of
+                        Maximum Order Statistic Expectations
+theoTLmoms              The Theoretical Trimmed L-moments and TL-moment
+                        Ratios using Integration of the Quantile
+                        Function
+theopwms                The Theoretical Probability-Weighted Moments
+                        using Integration of the Quantile Function
+tlmrcau                 Compute Select TL-moment ratios of the Cauchy
+                        Distribution
+tlmrexp                 Compute Select TL-moment ratios of the
+                        Exponential Distribution
+tlmrgev                 Compute Select TL-moment ratios of the
+                        Generalized Extreme Value Distribution
+tlmrglo                 Compute Select TL-moment ratios of the
+                        Generalized Logistic Distribution
+tlmrgno                 Compute Select TL-moment ratios of the
+                        Generalized Normal Distribution
+tlmrgpa                 Compute Select TL-moment ratios of the
+                        Generalized Pareto
+tlmrgum                 Compute Select TL-moment ratios of the Gumbel
+                        Distribution
+tlmrln3                 Compute Select TL-moment ratios of the
+                        3-Parameter Log-Normal Distribution
+tlmrnor                 Compute Select TL-moment ratios of the Normal
+                        Distribution
+tlmrpe3                 Compute Select TL-moment ratios of the Pearson
+                        Type III
+tlmrray                 Compute Select TL-moment ratios of the Rayleigh
+                        Distribution
+tttlmomco               Total Time on Test Transform of Distributions
+tulia6Eprecip           Annual Maximum Precipitation Data for Tulia 6E,
+                        Texas
+tuliaprecip             Annual Maximum Precipitation Data for Tulia,
+                        Texas
+vec2TLmom               Convert a Vector of TL-moments to a TL-moment
+                        Object
+vec2lmom                Convert a Vector of L-moments to a L-moment
+                        Object
+vec2par                 Convert a Vector of Parameters to a Parameter
+                        Object of a Distribution
+vec2pwm                 Convert a Vector of Probability-Weighted
+                        Moments to a Probability-Weighted Moments
+                        Object
+vegaprecip              Annual Maximum Precipitation Data for Vega,
+                        Texas
+x2pars                  Estimate an Ensemble of Parameters from Three
+                        Different Methods
+x2xlo                   Conversion of a Vector through a Left-Hand
+                        Threshold to Setup Conditional Probability
+                        Computations
+z.par2cdf               Blipping Cumulative Distribution Functions
+z.par2qua               Blipping Quantile Functions

@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: readExcelCountTable</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for readExcelCountTable {CAVIAR}"><tr><td>readExcelCountTable {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>readExcelCountTable</h2>
+
+<h3>Description</h3>
+
+<p>Reads Excel file containing cell count data in spreadsheets
+and write the data into a database-like dataframe.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ readExcelCountTable(excel.file.name,
+                     tree.description.sheet.name = "Tree description",
+                     sampling.description.sheet.name = "Sampling description")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>excel.file.name</code></td>
+<td>
+<p>a character string containing the path to the Excel file.</p>
+</td></tr>
+<tr valign="top"><td><code>tree.description.sheet.name</code></td>
+<td>
+<p>an optional character string containing the name of the sheet
+to be read for tree description (&quot;Tree description&quot; by default).</p>
+</td></tr>
+<tr valign="top"><td><code>sampling.description.sheet.name</code></td>
+<td>
+<p>an optional character string containing the name of the sheet
+to be read for sampling description (&quot;Sampling description&quot; by default).</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function reads Excel files containing metadata and cell count data in different spreadsheets
+and write the data into a database-like dataframe. <br />
+It first reads the tree description and the sampling description sheets of the indicated Excel file
+before to read automatically the different cell count data sheets based on the information given
+in the tree description file. <br />
+The function requires that: <br />
+</p>
+
+<ol>
+<li><p> the Excel file contains a tree description sheet, a sampling description sheet,
+and several cell count data sheets;
+</p>
+</li>
+<li><p> cell count data sheets are called using the number of the tree it described,
+preceded by the word Tree (example: Tree 56);
+This number must be given in the tree description sheet;
+</p>
+</li>
+<li><p> the tree description sheet contains 3 compulsory columns nammed: Tree, Site, and Species;
+other columns are discarded;
+</p>
+</li>
+<li><p> the sampling description sheet contains 3 compulsory columns nammed: Sample, Year, and DY;
+other columns are discarded;
+</p>
+</li>
+<li><p> a cell count data sheet must contain 16 compulsory columns, nammed:
+Sample, C1, C2, C3, E1, E2, E3, W1, W2, W3, M1, M2, M3, P1, P2, P3;
+other columns are discarded.
+</p>
+</li></ol>
+
+
+
+<h3>Value</h3>
+
+<p>A dataframe of 12 columns containing the qualitative variables: Site, Year, Species, Tree, Sample, DY, RF,
+and the quantitive variables CZ, EZ, WZ, MZ, and PR. <br />
+</p>
+
+
+<h3>Warning</h3>
+
+<p>This function is based on the read.xls function, so it needs the gdata package to run! <br />
+... The gdata package needs Perl to run.  <br />
+... You may also need to install the gtools package to run the example.  <br />
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 2.1-3. <br />
+Development started: 13 October 2010. <br />
+Last modifications: 10 January 2017.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, INRA, AgroParisTech, F-54000, Nancy, France <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K., Longuetaud F., Mothe F., Cuny H. &amp; Le Moguedec G. 2011.
+Phenology of wood formation: Data processing, analysis and visualisation using R (Package CAVIAR).
+<em>Dendrochronologia</em> <b>29</b>: 139-149. <br />
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ ## Setting the parameters of the function
+ #library(gdata)
+
+ ## Defining path names of the Excel files to be read
+ GRA2007.excel.file.name &lt;- file.path(path.package('CAVIAR'), 'extdata', 'GRA2007.xlsx')
+ GRA2008.excel.file.name &lt;- file.path(path.package('CAVIAR'), 'extdata', 'GRA2008.xlsx')
+ GRA2009.excel.file.name &lt;- file.path(path.package('CAVIAR'), 'extdata', 'GRA2009.xlsx')
+
+ ## Reading the Excel files
+ GRA2007.raw.data &lt;- readExcelCountTable(excel.file.name = GRA2007.excel.file.name)
+ GRA2008.raw.data &lt;- readExcelCountTable(excel.file.name = GRA2008.excel.file.name)
+ GRA2009.raw.data &lt;- readExcelCountTable(excel.file.name = GRA2009.excel.file.name)
+
+ ## Building the data frame containing the 3 years for this site
+ GRA.raw.data &lt;- rbind(GRA2007.raw.data, GRA2008.raw.data, GRA2009.raw.data)
+
+ ## Writing GRA data frame in an external csv file
+ write.csv2(GRA.raw.data, file="GRA.raw.data.csv", row.names=FALSE)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

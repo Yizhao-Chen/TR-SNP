@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: plotWoodGrowth</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for plotWoodGrowth {CAVIAR}"><tr><td>plotWoodGrowth {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>plotWoodGrowth</h2>
+
+<h3>Description</h3>
+
+<p>Allow to plot modelled wood growth curves to cumulative cell count data for all the tree of a dataset.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ plotWoodGrowth(growth.model.parameters, level="Tree", plot.by, hues, plot.title)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>growth.model.parameters</code></td>
+<td>
+<p>a list of elements, each containing four data frames: <br />
+(1) the references of the group (references); <br />
+(2) the fitted coefficients (coefficients); <br />
+(3) the values of observations and model predictions (values); <br />
+(4) the model simulations for every day of the year (simulations). <br />
+This is typically the output of <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a> function.</p>
+</td></tr>
+<tr valign="top"><td><code>level</code></td>
+<td>
+<p>an optional character string indicating at which plots must be drawn: <br />
+(1) option level =&quot;Tree&quot; (default), represents the three Gompertz curves (+ observations) for all
+individual trees; <br />
+(2) option level = &quot;Group&quot;, represents all the individual Gompertz curves along with the mean for
+all the groups of trees; <br />
+(3) option level = &quot;CT&quot;, represents the central tendency for all the groups of trees; <br />
+(4) option level = &quot;Comp&quot;, compare the central tendency for selected groups of trees.</p>
+</td></tr>
+<tr valign="top"><td><code>plot.by</code></td>
+<td>
+<p>a character string indicating which class must be represented on the plot (default = &quot;Species&quot;)</p>
+</td></tr>
+<tr valign="top"><td><code>hues</code></td>
+<td>
+<p>a named vector containg color hue (default = NULL)</p>
+</td></tr>
+<tr valign="top"><td><code>plot.title</code></td>
+<td>
+<p>a character string containing the plot title (default = NULL)</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function plots curves describing modelled wood growth, 
+along with observed cell count data (EWMZ, WMZ, MZ) according to selected option.
+</p>
+
+
+<h3>Value</h3>
+
+<p>None</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 5.1-2. <br />
+Development started: 11 June 2012. <br />
+Last modifications: 16 January 2017.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, INRA, AgroParisTech, F-54000, Nancy, France <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+   ## Data preparation
+   ## ----------------
+   ## Loading data
+   data(GRA)
+   
+   ## Averaging Grandfontaine raw data:
+   GRA.mean &lt;- aggregateRadialFiles(data=GRA, stat="mean")
+   
+   ## Standardising averaged data
+   GRA.sdd &lt;- standardiseCellCounts(GRA.mean)
+   
+   ## Computing final total ring cell number to constrain the asymptote of the Gompertz
+   GRA.sdd_RCN &lt;- computeRingCellNb(GRA.sdd)[, c("Site", "Year", "Tree", "Species", "RCN.Median")]
+   names(GRA.sdd_RCN) &lt;- c("Site", "Year", "Tree", "Species", "A")
+   
+   ## Fitting the Gompertz model on standardised data using fixed assymptotes
+   GRA.sdd_GZP.fix &lt;- fitGompertzModels(GRA.sdd, parameters=GRA.sdd_RCN, predictions=TRUE,
+                                        plot.fitting=FALSE, plot.obs.vs.pre=FALSE)
+   
+   ## Plotting Gompertz fittings using plotGompertzModels function
+   ## ------------------------------------------------------------
+   ## Plotting one tree
+   plotWoodGrowth(GRA.sdd_GZP.fix[1])
+   
+   ## Plotting all the trees individually
+   plotWoodGrowth(GRA.sdd_GZP.fix)
+   
+   ## Plotting all the trees by groups
+   plotWoodGrowth(GRA.sdd_GZP.fix, level="Group")
+   
+   ## Plotting the means for all the groups
+   plotWoodGrowth(GRA.sdd_GZP.fix, level="CT")
+   
+   ## Plotting the means for group of species to compare
+   plotWoodGrowth(GRA.sdd_GZP.fix, level="Comp")
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

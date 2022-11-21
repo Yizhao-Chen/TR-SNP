@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Fit Ball-Berry type models of stomatal conductance to many...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for fitBBs {plantecophys}"><tr><td>fitBBs {plantecophys}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fit Ball-Berry type models of stomatal conductance to many groups at once</h2>
+
+<h3>Description</h3>
+
+<p>A batch utility for the <code><a href="fitBB.html">fitBB</a></code> function, to fit the model for each group in a dataframe.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+fitBBs(data, group, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>Input dataframe, containing all variables needed to fit the model.</p>
+</td></tr>
+<tr valign="top"><td><code>group</code></td>
+<td>
+<p>Name of the grouping variable in the dataframe (quoted), the model will be fit for each group defined by this variable.</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>Further parameters passed to <code><a href="fitBB.html">fitBB</a></code>, see there for a full description.</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+# If you have a factor variable in your dataset called 'species', and you
+# want to fit the Ball-Berry model for each of the species:
+myfits &lt;- fitBBs(mydata, "species", model="BallBerry")
+
+# A dataframe with coefficients is returned by coef()
+coef(myfits)
+
+
+## End(Not run)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>plantecophys</em> version 1.4-4 <a href="00Index.html">Index</a>]</div>
+</body></html>

@@ -1,0 +1,22 @@
+CAVIAR-package          Cambial activity and wood formation: data
+                        processing, visualisation and analysis using R
+GRA                     GRA cell count table
+aggregateRadialFiles    aggregateRadialFiles
+computeBootstrapTest    computeBootstrapTest
+computeCriticalDates    computeCriticalDates
+computeGompertzCellTimings
+                        computeGompertzCellTimings
+computeRingCellNb       computeRingCellNb
+expandCellCountTable    expandCellCountTable
+fitGompertzModels       fitGompertzModels
+overviewCellCountTable
+                        overviewCellCountTable
+plotCleavelandDotChart
+                        plotCleavelandDotChart
+plotWoodFormationCalendar
+                        plotWoodFormationCalendar
+plotWoodFormationDynamics
+                        plotWoodFormationDynamics
+plotWoodGrowth          plotWoodGrowth
+readExcelCountTable     readExcelCountTable
+standardiseCellCounts   standardiseCellCounts

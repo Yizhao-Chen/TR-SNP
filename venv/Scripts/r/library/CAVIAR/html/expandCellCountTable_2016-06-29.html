@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: expandCellCountTable</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for expandCellCountTable {CAVIAR}"><tr><td>expandCellCountTable {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>expandCellCountTable</h2>
+
+<h3>Description</h3>
+
+<p>Expands a cell count table so that all the missing values are coded explicitly with NA.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+   expandCellCountTable(data)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data.frame containing cell count data. This data frame must contain 12 imposed variables
+with compulsory column names: Site, Year, Tree, Species, Sample, DY, RF, C, E, W, M, 
+and P (see <code><a href="GRA_2017-01-10.html">GRA</a></code>).
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function takes a data frame of raw cell count data (C, E, W, M, and P) recorded by radial file or 
+the aggregated values (median or mean) per tree by tree as input and expand it, 
+so that all the missing values are coded explicitly with NA.
+</p>
+
+
+<h3>Value</h3>
+
+<p>A data frame containing: <br />
+the unchanged group variables: Site, Year, Species, Tree, Sample, and DY (plus RF according to input); <br />
+and the values for variables: C, E, W, M, and P; <br />
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 1.1-0. <br />
+Development started: 27 May 2014. <br />
+Last modifications: 28 July 2014.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, UMR1092 - INRA Nancy (France) <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K. et al. Wood formation monitoring data verification using CaviaR R package.
+<em>in prep.</em>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+   ## Loading the example dataset
+   data(GRA)
+   
+   ## Computing the expanded data frame for GRA raw data
+   GRA.exp &lt;- expandCellCountTable(GRA)
+   
+   ## Computing the expanded data frame for GRA aggregated data
+   GRA.med &lt;- aggregateRadialFiles(GRA)
+   GRA.med.exp &lt;- expandCellCountTable(GRA.med)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

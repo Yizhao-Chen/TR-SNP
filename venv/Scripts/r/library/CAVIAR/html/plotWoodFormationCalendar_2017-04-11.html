@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: plotWoodFormationCalendar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for plotWoodFormationCalendar {CAVIAR}"><tr><td>plotWoodFormationCalendar {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>plotWoodFormationCalendar</h2>
+
+<h3>Description</h3>
+
+<p>Plots wood formation calendar
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ plotWoodFormationCalendar(data, level = "Tree", main = " ", sub = " ", xlim = NULL)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data frame of critical dates and durations with
+8 compulsory columns located by their names (bE, bW, bM, cE, cW, dE, dW, dX), 
+typically output from <code><a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a></code> function.
+</p>
+</td></tr>
+<tr valign="top"><td><code>level</code></td>
+<td>
+<p>an optional character indicating the type of plot to draw
+&quot;Tree&quot; : plot of individual critical dates for each tree of the group,<br />
+&quot;Group.Dates&quot;: plot of median critical dates for a group of trees,<br />
+&quot;Group.Durations&quot;: plot of median critical durations for a group of trees.
+</p>
+</td></tr>
+<tr valign="top"><td><code>main</code></td>
+<td>
+<p>an optional character containing the plot title.
+</p>
+</td></tr>
+<tr valign="top"><td><code>sub</code></td>
+<td>
+<p>an optional character containing the plot subtitle.
+</p>
+</td></tr>
+<tr valign="top"><td><code>xlim</code></td>
+<td>
+<p>an optional vector indicating the x-axis minimum and maximum values.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Critical dates can be first plotted for each individual tree (5 trees per page) in order to allow
+a visual checking of date consistencies using <span class="option">level = "Tree"</span>. <br />
+Consistent dates can then be used to draw a wood formation calendar using <span class="option">level = "Group.Dates"</span>
+for critical dates and <span class="option">level = "Group.Durations"</span> for critical durations. <br />
+Onsets and cessations of wood formation phenophases (i.e. enlargement: E, wall thickening: W, and
+mature: M)  are represented by diamond-crossed-by-a-line marks.
+The left end of the line represents the minimum, the left end of the diamond the first quartile,
+the middle of the diamond the median, the right end of the diamond the third quartile, and the
+right end of the line the maximum. <br />
+NB. These representations are specially designed for five trees datasets. They also work when more
+trees are available, but then the graph represents a summary of the dataset and not the individual
+data.
+</p>
+
+
+<h3>Value</h3>
+
+<p>A data frame of the critical dates and durations median and median absolute deviation.
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 5.3-1. <br />
+Development started: 27 November 2008. <br />
+Last modifications: 11 April 2017.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, UMR1092 - INRA Nancy (France) <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K., Longuetaud F., Mothe F., Cuny H. &amp; Le Moguedec G. 2011.
+Phenology of wood formation: Data processing, analysis and visualisation using R (Package CAVIAR).
+<em>Dendrochronologia</em> <b>29</b>: 139-149. <br />
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ ## Loading the GRA dataset:
+ data(GRA)
+ 
+ ## Selecting only one year because the function is still not taking year factor into account!
+ GRA2009 &lt;- GRA[GRA$Year==2009, ]
+ Fir2009 &lt;- GRA2009[GRA2009$Sp=="ABAL", ]
+ Spruce2009 &lt;- GRA2009[GRA2009$Sp=="PCAB", ]
+ Pine2009 &lt;- GRA2009[GRA2009$Sp=="PISY", ]
+
+ ## Computing wood formation critical dates for firs, spruces, and pines:
+ Fir.CD &lt;- computeCriticalDates(Fir2009, plot = TRUE)
+ Spruce.CD &lt;- computeCriticalDates(Spruce2009, plot = TRUE)
+ Pine.CD &lt;- computeCriticalDates(Pine2009, plot = TRUE)
+
+ ## Visualising fir wood formation critical dates and durations on the screen:
+ ## Individual dates
+ plotWoodFormationCalendar(Fir.CD, level = "Tree")
+ ## Dates by group of trees
+ plotWoodFormationCalendar(Fir.CD, level = "Group.Dates")
+ ## Durations by group of trees
+ plotWoodFormationCalendar(Fir.CD, level = "Group.Durations")
+
+ ## Plotting fir wood formation critical dates and durations in a PDF file:
+ ## Opening pdf file
+ pdf(file = "Fir, 2009 wood formation calendar.pdf")
+ 
+ ## General settings for the figure
+ layout(matrix(c(1, 2, 3), nrow=3, ncol=1))
+ par(mar=c(4, 4, 4, 2))
+ 
+ ## Drawing the first plot: fir 2009 individual critical dates
+ plotWoodFormationCalendar(Fir.CD, level = "Tree",
+                           sub = "a. Fir 2009, individual critical dates")
+
+ ## Drawing the second plot: synthesis of fir 2009 critical dates 
+ plotWoodFormationCalendar(Fir.CD, level = "Group.dates",		
+                           xlim = c(100, 350), sub="b. Fir 2009 wood formation calendar", )
+
+ ## Drawing the third plot: synthesis of fir 2009 critical durations
+ plotWoodFormationCalendar(Fir.CD, level = "Group.Durations",
+                           xlim = c(100, 230), sub="c. Fir 2009 wood formation durations")
+
+ ## Closing pdf file
+ dev.off()
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

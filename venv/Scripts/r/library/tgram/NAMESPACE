@@ -1,0 +1,12 @@
+# Export regular functions
+export("tgram", "standz","standz.all")
+
+# Import all packages listed as Imports or Depends
+# ToDo: "importFrom" only required functions 
+import(zoo)
+
+## Registration of S3 methods
+import(stats)
+import(graphics)
+S3method(plot, standz.all)
+S3method(plot, tgram)

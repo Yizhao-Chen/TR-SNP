@@ -1,0 +1,15 @@
+citHeader("To cite", sQuote("tgram"), "in publications, please use:")
+
+citEntry(entry = "Article",
+         title = "Intra-annual patterns of tracheid size in the Mediterranean tree Juniperus thurifera as an indicator of seasonal water stress",
+         author = as.person("Lucia DeSoto [aut], Marcelino de la Cruz [aut], Patrick Fonti [aut] ") ,
+	 journal = "Canadian Journal of Forest Research",
+         pages = "1280-1294",
+         year  = "2011",
+	 textVersion = paste(
+		"DeSoto, L., De la Cruz, M., Fonti, P. (2011).",
+		"Intra-annual patterns of tracheid size in the Mediterranean tree Juniperus thurifera as an indicator of seasonal water stress.",
+"Canadian Journal of Forest Research 41: 1280-1294")
+         )
+
+

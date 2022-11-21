@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: plotWoodFormationDynamics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for plotWoodFormationDynamics {CAVIAR}"><tr><td>plotWoodFormationDynamics {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>plotWoodFormationDynamics</h2>
+
+<h3>Description</h3>
+
+<p>Plots intra-annual dynamics of wood formation
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+   plotWoodFormationDynamics(data, standardised.data, level="RF", show.previous.ring=FALSE, stat="mean")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data.frame containing cell count data. <br />
+This data.frame must contain raw data, i.e. 12 imposed variables with the following compulsory column names: <br />
+Site, Year, Tree, Species, Sample, DY, RF, CZ, EZ, WZ, MZ, and PR (see <code><a href="GRA_2017-01-10.html">GRA</a></code>). <br />
+Alternatively, this data.frames can be outputed from <code><a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a></code> function, <br />
+(in this case the data.frame contains 11 columns: Site, Year, Tree, Species, Sample, DY, RF, C, E, W, M, and P).</p>
+</td></tr>
+<tr valign="top"><td><code>standardised.data</code></td>
+<td>
+<p>an optional data.frame containing standardised cell count data. <br />
+This data.frame must contain aggregated data, i.e. 11 imposed variables with the following compulsory column names: <br />
+Site, Year, Tree, Species, Sample, DY, CZ, EZ, WZ, MZ, and Ratio. <br />
+Typically, this data.frames can be outputed from <code><a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a></code> function, <br />
+(in this case the data.frame contains 11 columns: Site, Year, Tree, Species, Sample, DY, RF, C, E, W, M, and P).</p>
+</td></tr>
+<tr valign="top"><td><code>level</code></td>
+<td>
+<p>an optional character string indicating at which level plots must be drawn: <br />
+&quot;RF&quot; (default), &quot;Tree&quot;, &quot;MvM&quot;, &quot;CT&quot;, or &quot;Comp&quot;.</p>
+</td></tr>
+<tr valign="top"><td><code>show.previous.ring</code></td>
+<td>
+<p>an optional logical indicating if previous ring measurements must be drawn or not (default).</p>
+</td></tr>
+<tr valign="top"><td><code>stat</code></td>
+<td>
+<p>an optional character string indicating if central tendency must be represented by the &quot;median&quot; <br />
+or the &quot;mean&quot;(default).</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function is designed to allow a meticulous checking of cell count data at different levels. <br />
+Basically, it draws a figure containing a plot for each zone of differentiation 
+(+ on for previous ring measurements optionally). <br />
+</p>
+
+<ol>
+<li><p> level radial file: the figures allow visualisation of all the raw data tree by tree;
+</p>
+</li>
+<li><p> level tree: the figures allow visualisation of all the averaged data group of trees by group of trees;
+</p>
+</li>
+<li><p> level group: the figures allow the comparison of the means and the medians group of trees by group of trees;
+</p>
+</li>
+<li><p> level trend: the figures allow drawing the central tendency (mean or median) group of trees by group of trees;
+</p>
+</li>
+<li><p> level comparison: the figures allow visualisation of all raw vs. standardised data tree by tree.</p>
+</li></ol>
+
+
+
+<h3>Value</h3>
+
+<p>An optional data frame of at 8-9 columns containing:
+the unchanged group variables: Site, Year, Species, Tree (when needed), Sample, and DY; <br />
+and the values for problematic dates: NC (Number of cells), LD (Lower boundary), UB (upper boundary). <br />
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 6.1-1. <br />
+Development started: 27 November 2008. <br />
+Last modifications: 18 Octobre 2014.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, UMR1092 - INRA Nancy (France) <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K., Longuetaud F., Mothe F., Cuny H. &amp; Le Moguedec G. 2011.
+Phenology of wood formation: Data processing, analysis and visualisation using R (Package CAVIAR).
+<em>Dendrochronologia</em> <b>29</b>: 139-149. <br />
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotCleavelandDotChart_2016-06-27.html">plotCleavelandDotChart</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+   ## Loading the training dataset
+   data(GRA)
+   
+   ## Checking raw data, looking for outliers
+   ## ---------------------------------------
+   ## Radial file level without previous ring mesurements
+   Rslt.RF &lt;- plotWoodFormationDynamics(GRA, level="RF", show.previous.ring=FALSE)
+   
+   ## Radial file level with previous ring mesurements
+   Rslt.RF.PR &lt;- plotWoodFormationDynamics(GRA, level="RF", show.previous.ring=TRUE)
+
+   ## Checking tree groups, assessing homogeneity
+   ## ------------------------------------------
+   ## Tree level without previous ring mesurements
+   Rslt.TR &lt;- plotWoodFormationDynamics(GRA, level="Tree", show.previous.ring=FALSE)
+   
+   ## Tree level without previous ring mesurements
+   Rslt.TR.PR &lt;- plotWoodFormationDynamics(GRA, level="Tree", show.previous.ring=TRUE)
+   
+   ## Checking tree groups, assesing consistency
+   ## ------------------------------------------
+   ## Group level without previous ring mesurements
+   Rslt.GR &lt;- plotWoodFormationDynamics(GRA, level="MvM", show.previous.ring=FALSE)
+   
+   ## Group level with previous ring mesurements
+   Rslt.GR.PR &lt;- plotWoodFormationDynamics(GRA, level="MvM", show.previous.ring=TRUE)
+   
+   ## Presenting tree group trends, showing central tendency
+   ## ------------------------------------------------------
+   ## Trend level without previous ring mesurements and median
+   Rslt.CT.median &lt;- plotWoodFormationDynamics(GRA, level="CT", show.previous.ring=FALSE, stat="median")
+
+   ## Trend level without previous ring mesurements and mean
+   Rslt.CT.PR.mean &lt;- plotWoodFormationDynamics(GRA, level="CT", show.previous.ring=FALSE, stat="mean")
+   
+   ## Trend level with previous ring mesurements and median
+   Rslt.CT.median &lt;- plotWoodFormationDynamics(GRA, level="CT", show.previous.ring=TRUE, stat="median")
+   
+   ## Trend level with previous ring mesurements and mean
+   Rslt.CT.PR.mean &lt;- plotWoodFormationDynamics(GRA, level="CT", show.previous.ring=TRUE, stat="mean")
+   
+   ## Comparing aggregated raw data with stadardised data
+   ## ---------------------------------------------------
+   ## Computing the mean for Grandfontaine raw data
+   GRA.mean &lt;- aggregateRadialFiles(data=GRA, stat="mean")
+
+   ## Standardising averaged data
+   GRA.sdd &lt;- standardiseCellCounts(GRA.mean)
+   
+   ## Comparison between raw and standardised data
+   Rslt.CP &lt;- plotWoodFormationDynamics(GRA.mean, GRA.sdd, level="Comp")
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

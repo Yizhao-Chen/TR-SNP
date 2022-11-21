@@ -1,0 +1,9 @@
+align                   Data alignment
+anatomy.data            Anatomical measurements
+batch.mode              Automatic rows and position detection
+example.data            Species-specific anatomy input
+first.cell              Detection of the first cells
+graph.cells             Data visualization
+is.raptor               Testing and preparing input data
+pos.det                 Determining the cell position
+write.output            Output generation and visualization

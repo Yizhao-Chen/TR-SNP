@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: plotCleavelandDotChart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for plotCleavelandDotChart {CAVIAR}"><tr><td>plotCleavelandDotChart {CAVIAR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>plotCleavelandDotChart</h2>
+
+<h3>Description</h3>
+
+<p>Plots Cleaveland Dot Chart for cell count data
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ plotCleavelandDotChart(data, show.previous.ring = TRUE)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data frame containing cell count data  with imposed column names: 
+Site, Year, Tree, Species, Sample, DY, RF, CZ , EZ, WZ, MZ, and optionally PR</p>
+</td></tr>
+<tr valign="top"><td><code>show.previous.ring</code></td>
+<td>
+<p>an optional logical indicating if previous ring measurements 
+must be used (default=TRUE) or not (FALSE)</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Cleaveland Dot Chart are plotted for cell count data for each phase of development,
+and for a whole data set, groupping trees per site and year automatically.
+</p>
+
+
+<h3>Value</h3>
+
+<p>A List of matrix containing lower and upper fences for each groups of trees.
+</p>
+
+
+<h3>Note</h3>
+
+<p>Version: 1.1-4. <br />
+Development started: 27 March 2014. <br />
+Last modifications: 27 June 2016.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Cyrille Rathgeber - LERFoB, UMR1092 - INRA Nancy (France) <br />
+Email: <a href="mailto:cyrille.rathgeber@inra.fr">cyrille.rathgeber@inra.fr</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rathgeber C.B.K. Wood formation monitoring data verification using CaviaR R package.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>
+  <a href="aggregateRadialFiles_2016-09-27.html">aggregateRadialFiles</a>,
+  <a href="computeBootstrapTest_2016-09-26.html">computeBootstrapTest</a>,
+  <a href="computeCriticalDates_2016-09-28.html">computeCriticalDates</a>,
+  <a href="computeGompertzCellTimings.html">computeGompertzCellTimings</a>,
+  <a href="computeRingCellNb_2016-10-06.html">computeRingCellNb</a>,
+  <a href="fitGompertzModels_2016-11-11.html">fitGompertzModels</a>,
+  <a href="expandCellCountTable_2016-06-29.html">expandCellCountTable</a>,
+  <a href="GRA_2017-01-10.html">GRA</a>,
+  <a href="overviewCellCountTable_2017-01-10.html">overviewCellCountTable</a>,
+  <a href="plotWoodFormationCalendar_2017-04-11.html">plotWoodFormationCalendar</a>,
+  <a href="plotWoodFormationDynamics_2017-04-07.html">plotWoodFormationDynamics</a>,
+  <a href="plotWoodGrowth_2017-01-16.html">plotWoodGrowth</a>,
+  <a href="readExcelCountTable_2017-07-21.html">readExcelCountTable</a>,
+  <a href="standardiseCellCounts_2016-09-27.html">standardiseCellCounts</a>
+  </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+   ## Loading the GRA dataset:
+   data(GRA)
+
+   ## Looking for outliers and errors in GRA dataset
+   plotCleavelandDotChart(GRA, show.previous.ring = TRUE) 
+
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>CAVIAR</em> version 2.10-0 <a href="00Index.html">Index</a>]</div>
+</body></html>

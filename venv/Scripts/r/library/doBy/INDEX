@@ -1,0 +1,45 @@
+by-lapply               Formula based version of lapply.
+by-order                Ordering (sorting) rows of a data frame
+by-sample               Sampling from a data frame
+by-split                Split a data frame
+by-subset               Finds subsets of a dataframe which is split by
+                        variables in a formula.
+by-summary              Function to calculate groupwise summary
+                        statistics
+by-transform            Function to make groupwise transformations
+data-NIRmilk            NIRmilk
+data-beets              beets data
+data-breastcancer       Gene expression signatures for p53 mutation
+                        status in 250 breast cancer samples
+data-budworm            budworm data
+data-carcass            Lean meat contents of 344 pig carcasses
+data-codstom            Diet of Atlantic cod in the Gulf of St.
+                        Lawrence (Canada)
+data-crimeRate          crimeRate
+data-dietox             Growth curves of pigs in a 3x3 factorial
+                        experiment
+data-haldCement         Heat development in cement under hardening.
+data-milkman            Milk yield data for manually milked cows.
+data-potatoes           Weight and size of 20 potatoes
+descStat                Computing simple descriptive statistics of a
+                        numeric vector.
+esticon                 Contrasts for lm, glm, lme, and geeglm objects
+fatacid                 Fish oil in pig food
+firstlastobs            Locate the index of the first/last unique value
+is-estimable            Determines if contrasts are estimable.
+linest-get              Auxillary functions for computing lsmeans,
+                        contrasts etc
+linest-matrix           Linear estimates matrix
+ls-means                Compute LS-means (aka population means or
+                        marginal means)
+null-basis              Finds the basis of the (right) null space.
+parseGroupFormula       Extract components from a formula with
+                        "conditioning bar"
+recodeVar               Recode values of a vector
+renameCol               Rename columns in a matrix or a dataframe.
+subSeq                  Find sub-sequences of identical elements in a
+                        vector.
+summary.esticon_class   Compute linear estimates
+timeSinceEvent          Calculate "time since event" in a vector.
+which.maxn              Where are the n largest or n smallest elements
+                        in a numeric vector ?

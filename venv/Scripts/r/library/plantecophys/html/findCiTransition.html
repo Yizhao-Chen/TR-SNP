@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Calculate transition points for fitted A-Ci curves</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for findCiTransition {plantecophys}"><tr><td>findCiTransition {plantecophys}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Calculate transition points for fitted A-Ci curves</h2>
+
+<h3>Description</h3>
+
+<p>Calculates the Ci at the transition points between Ac &amp; Aj (point 1), and Aj and Ap (point 2). The latter is not NA only when TPU was estimated (and estimable), see <code><a href="fitaci.html">fitaci</a></code>, argument <code>fitTPU</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+findCiTransition(object, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>object</code></td>
+<td>
+<p>Either an object returned by <code>fitaci</code>, or a copy of the <code>Photosyn</code> function.</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>Further arguments passed to the <code>Photosyn</code> function.</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>This function is also used by <code>fitaci</code>, the results are stored in elements <code>Ci_transition</code> and <code>Ci_transition2</code>.
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>plantecophys</em> version 1.4-4 <a href="00Index.html">Index</a>]</div>
+</body></html>

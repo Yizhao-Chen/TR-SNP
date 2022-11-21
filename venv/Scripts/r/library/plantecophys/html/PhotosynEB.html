@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Coupled leaf gas exchange model with energy balance</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for PhotosynEB {plantecophys}"><tr><td>PhotosynEB {plantecophys}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Coupled leaf gas exchange model with energy balance</h2>
+
+<h3>Description</h3>
+
+<p>As <code><a href="Photosyn.html">Photosyn</a></code>, but calculates the leaf temperature based on the leaf's energy balance. Including sensible and long-wave heat loss, latent heat loss from evaporation, and solar radiation input. 
+</p>
+<p>#'<strong>Warning:</strong>Do not provide GS as an input to <code>PhotosynEB</code> directly; the results will not be as expected (filed as issue #27)
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+PhotosynEB(Tair = 25, VPD = 1.5, Wind = 2, Wleaf = 0.02,
+  StomatalRatio = 1, LeafAbs = 0.86, RH = NULL, ...)
+
+FindTleaf(gs, Tair, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>Tair</code></td>
+<td>
+<p>Air temperature (C)</p>
+</td></tr>
+<tr valign="top"><td><code>VPD</code></td>
+<td>
+<p>The vapour pressure deficit of the air (i.e. not the leaf-to-air VPD) (kPa).</p>
+</td></tr>
+<tr valign="top"><td><code>Wind</code></td>
+<td>
+<p>Wind speed (m s-1)</p>
+</td></tr>
+<tr valign="top"><td><code>Wleaf</code></td>
+<td>
+<p>Leaf width (m)</p>
+</td></tr>
+<tr valign="top"><td><code>StomatalRatio</code></td>
+<td>
+<p>The stomatal ratio (cf. Licor6400 terminology), if it is 1, leaves have stomata only on one side (hypostomatous), 2 for leaves with stomata on both sides (amphistomatous).</p>
+</td></tr>
+<tr valign="top"><td><code>LeafAbs</code></td>
+<td>
+<p>Leaf absorptance of solar radiation (0-1).</p>
+</td></tr>
+<tr valign="top"><td><code>RH</code></td>
+<td>
+<p>The relative humidity of the air (i.e. not calculated with leaf temperature) (in percent).</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>Further parameters passed to <code><a href="Photosyn.html">Photosyn</a></code>. Note that Tleaf is not allowed as an input, since that is calculated by <code>PhotosynEB</code> from energy balance.</p>
+</td></tr>
+<tr valign="top"><td><code>gs</code></td>
+<td>
+<p>For <code>FindTleaf</code>, the stomatal conductance (mol m-2 s-1).</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Uses the Penman-Monteith equation to calculate the leaf transpiration rate, and finds Tleaf by solving the leaf energy balance iteratively. In the solution, it is accounted for that stomatal conductance (via the dependence of photosynthesis on Tleaf) and net radiation depend on Tleaf.
+</p>
+<p>Also included is the function <code>FindTleaf</code>, which calculates the leaf temperature if the stomatal conductance is known. The <strong>limitation</strong> to this function is that input stomatal conductance (gs) is not vectorized, i.e. you can only provide one value at a time.
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>plantecophys</em> version 1.4-4 <a href="00Index.html">Index</a>]</div>
+</body></html>

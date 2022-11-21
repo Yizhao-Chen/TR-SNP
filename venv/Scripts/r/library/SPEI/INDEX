@@ -1,0 +1,13 @@
+                        Calculation of the Standardised
+                        Precipitation-Evapotranspiration Index
+SPEINews                Show the NEWS file
+kern                    Time kernel for computing the SPEI at different
+                        time scales.
+pglo                    Generalized Logistic distribution function.
+print.spei              Generic methods for 'spei' objects.
+spei                    Calculation of the Standardized
+                        Precipitation-Evapotranspiration Index (SPEI)
+                        and the Standardized Precipitation Index (SPI).
+thornthwaite            Computation of potential evapotranspiration.
+wichita                 Datasets for illustrating the functions in the
+                        SPEI package.

@@ -1,0 +1,17 @@
+CAVIAR-package	CAVIAR-package
+aggregateRadialFiles	aggregateRadialFiles_2016-09-27
+CAVIAR	CAVIAR-package
+computeBootstrapTest	computeBootstrapTest_2016-09-26
+computeCriticalDates	computeCriticalDates_2016-09-28
+computeGompertzCellTimings	computeGompertzCellTimings
+computeRingCellNb	computeRingCellNb_2016-10-06
+expandCellCountTable	expandCellCountTable_2016-06-29
+fitGompertzModels	fitGompertzModels_2016-11-11
+GRA	GRA_2017-01-10
+overviewCellCountTable	overviewCellCountTable_2017-01-10
+plotCleavelandDotChart	plotCleavelandDotChart_2016-06-27
+plotWoodFormationCalendar	plotWoodFormationCalendar_2017-04-11
+plotWoodFormationDynamics	plotWoodFormationDynamics_2017-04-07
+plotWoodGrowth	plotWoodGrowth_2017-01-16
+readExcelCountTable	readExcelCountTable_2017-07-21
+standardiseCellCounts	standardiseCellCounts_2016-09-27
